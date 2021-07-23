@@ -358,6 +358,16 @@ p {
   .content {
     grid-template-columns: 1fr;
   }
+
+  .guias h2 {
+    font-size: 2rem;
+  }
+
+  .guias h3 {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 700;
+  }
   
 }
 
