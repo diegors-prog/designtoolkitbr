@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kit de ferramentas de design</title>
+        <meta name="description" content="Lista de conteúdos para estudo sobre Design de Interação e Experiência do Usuário (UX)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Kit de ferramentas de design"/>
+        <meta property="og:description" content="Lista de conteúdos para estudo sobre Design de Interação e Experiência do Usuário (UX)"/>
+        <meta property="og:url" content="https://designtoolkitbr.com"/>
+        <meta property="og:image" content="https://designtoolkitbr.com/assets/img/og-image-toolkit.png"/>
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/og-image-toolkit.png" alt="" class="header__img">
+
+                <a href="index.html" class="header__logo">Design Toolkit BR</a>
+    
+                <!--<div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                    <ul class="sugestoes"></ul>
+                </div>-->
+                
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+    
+                            <a href="#" class="nav__link active js-tabMenu">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <h3 class="nav__subtitle">Execução</h3>
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-spreadsheet nav__icon'></i>
+                                    <span class="nav__name">Guias</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Arquitetura da informação</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Avaliação heurística</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Benchmarking</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Card sorting</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Cenários</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Diagrama de fluxo</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Experience map</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Mapa conceitual</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Observação contextual</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Persona</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Prototipagem</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Questionários</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Storyboard</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Teste com usuários</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">Tree testing</a>
+                                        <a href="#" class="nav__dropdown-item nav__link js-tabMenu">User journey</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Aprendizagem</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-file-find nav__icon'></i>
+                                    <span class="nav__name">Métodos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Affinity diagram</a>
+                                        <a href="#" class="nav__dropdown-item">Análises de artefatos</a>
+                                        <a href="#" class="nav__dropdown-item">Analíticas</a>
+                                        <a href="#" class="nav__dropdown-item">Arquitetura da informação</a>
+                                        <a href="#" class="nav__dropdown-item">Avaliação heurística</a>
+                                        <a href="#" class="nav__dropdown-item">Benchmarking</a>
+                                        <a href="#" class="nav__dropdown-item">Card sorting</a>
+                                        <a href="#" class="nav__dropdown-item">Cenários</a>
+                                        <a href="#" class="nav__dropdown-item">Challenge mapping</a>
+                                        <a href="#" class="nav__dropdown-item">Cognitive walkthrough</a>
+                                        <a href="#" class="nav__dropdown-item">Desk research</a>
+                                        <a href="#" class="nav__dropdown-item">Diagrama de fluxo</a>
+                                        <a href="#" class="nav__dropdown-item">Diários do usuário</a>
+                                        <a href="#" class="nav__dropdown-item">Entrevista</a>
+                                        <a href="#" class="nav__dropdown-item">Espaço do problema e da solução</a>
+                                        <a href="#" class="nav__dropdown-item">Experience map</a>
+                                        <a href="#" class="nav__dropdown-item">Fact finding</a>
+                                        <a href="#" class="nav__dropdown-item">Focus groups</a>
+                                        <a href="#" class="nav__dropdown-item">Jobs to be Done</a>
+                                        <a href="#" class="nav__dropdown-item">Lean UX Canvas</a>
+                                        <a href="#" class="nav__dropdown-item">Mapa conceitual</a>
+                                        <a href="#" class="nav__dropdown-item">Mapa da empatia</a>
+                                        <a href="#" class="nav__dropdown-item">Modelo Kano</a>
+                                        <a href="#" class="nav__dropdown-item">Observação</a>
+                                        <a href="#" class="nav__dropdown-item">Observação contextual</a>
+                                        <a href="#" class="nav__dropdown-item">Perfil do usuário</a>
+                                        <a href="#" class="nav__dropdown-item">Persona</a>
+                                        <a href="#" class="nav__dropdown-item">Problem framing</a>
+                                        <a href="#" class="nav__dropdown-item">Problem statement</a>
+                                        <a href="#" class="nav__dropdown-item">Prototipagem</a>
+                                        <a href="#" class="nav__dropdown-item">Questionários</a>
+                                        <a href="#" class="nav__dropdown-item">Service blueprint</a>
+                                        <a href="#" class="nav__dropdown-item">Storyboard</a>
+                                        <a href="#" class="nav__dropdown-item">Teste com usuários</a>
+                                        <a href="#" class="nav__dropdown-item">Tipografía / mapping</a>
+                                        <a href="#" class="nav__dropdown-item">Tree testing</a>
+                                        <a href="#" class="nav__dropdown-item">User journey</a>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bookmark-alt nav__icon'></i>
+                                    <span class="nav__name">Princípios</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Affordance</a>
+                                        <a href="#" class="nav__dropdown-item">Agrupamento (chunking)</a>
+                                        <a href="#" class="nav__dropdown-item">Alinhamento</a>
+                                        <a href="#" class="nav__dropdown-item">Coerência</a>
+                                        <a href="#" class="nav__dropdown-item">Confirmação</a>
+                                        <a href="#" class="nav__dropdown-item">Controle</a>
+                                        <a href="#" class="nav__dropdown-item">Dissonância cognitiva</a>
+                                        <a href="#" class="nav__dropdown-item">Erros</a>
+                                        <a href="#" class="nav__dropdown-item">Hierarquia</a>
+                                        <a href="#" class="nav__dropdown-item">Legibilidade</a>
+                                        <a href="#" class="nav__dropdown-item">Lei de Fitts</a>
+                                        <a href="#" class="nav__dropdown-item">Lei de Hick</a>
+                                        <a href="#" class="nav__dropdown-item">Mapeamento natural</a>
+                                        <a href="#" class="nav__dropdown-item">Metáfora</a>
+                                        <a href="#" class="nav__dropdown-item">Modelo mental</a>
+                                        <a href="#" class="nav__dropdown-item">Proximidade (closure)</a>
+                                        <a href="#" class="nav__dropdown-item">Ponto de entrada (entry point)</a>
+                                        <a href="#" class="nav__dropdown-item">Reconhecer antes de lembrar</a>
+                                        <a href="#" class="nav__dropdown-item">Restrição</a>
+                                        <a href="#" class="nav__dropdown-item">Retroação (feedback)</a>
+                                        <a href="#" class="nav__dropdown-item">Similaridade</a>
+                                        <a href="#" class="nav__dropdown-item">Visibilidade</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-border-all nav__icon'></i>
+                                    <span class="nav__name">Modelos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Ágil</a>
+                                        <a href="#" class="nav__dropdown-item">Co-design</a>
+                                        <a href="#" class="nav__dropdown-item">Design centrado nas pessoas</a>
+                                        <a href="#" class="nav__dropdown-item">Design especulativo</a>
+                                        <a href="#" class="nav__dropdown-item">Design thinking</a>
+                                        <a href="#" class="nav__dropdown-item">Iterativo</a>
+                                        <a href="#" class="nav__dropdown-item">Waterfall</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-code-alt nav__icon'></i>
+                                    <span class="nav__name">Interação</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Conversing</a>
+                                        <a href="#" class="nav__dropdown-item">Exploring</a>
+                                        <a href="#" class="nav__dropdown-item">Gesture</a>
+                                        <a href="#" class="nav__dropdown-item">Glossário UX / HCI</a>
+                                        <a href="#" class="nav__dropdown-item">Graphical user interface</a>
+                                        <a href="#" class="nav__dropdown-item">Instructing</a>
+                                        <a href="#" class="nav__dropdown-item">Interação e interfaces</a>
+                                        <a href="#" class="nav__dropdown-item">Interação tangível</a>
+                                        <a href="#" class="nav__dropdown-item">Interfaces de jogo: controle</a>
+                                        <a href="#" class="nav__dropdown-item">Interfaces de jogo: feedback</a>
+                                        <a href="#" class="nav__dropdown-item">Manipulating</a>
+                                        <a href="#" class="nav__dropdown-item">Realidade aumentada</a>
+                                        <a href="#" class="nav__dropdown-item">Realidade virtual</a>
+                                        <a href="#" class="nav__dropdown-item">Speech</a>
+                                        <a href="#" class="nav__dropdown-item">Touch</a>
+                                        <a href="#" class="nav__dropdown-item">Typing</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-glasses nav__icon'></i>
+                                    <span class="nav__name">Visões</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Acessibilidade</a>
+                                        <a href="#" class="nav__dropdown-item">Agência</a>
+                                        <a href="#" class="nav__dropdown-item">Capitalismo da vigilância</a>
+                                        <a href="#" class="nav__dropdown-item">Clickbait</a>
+                                        <a href="#" class="nav__dropdown-item">Economia da atenção</a>
+                                        <a href="#" class="nav__dropdown-item">Fatores psicológicos e cognitivos </a>
+                                        <a href="#" class="nav__dropdown-item">Persuasão</a>
+                                        <a href="#" class="nav__dropdown-item">Preconceito do designer</a>
+                                        <a href="#" class="nav__dropdown-item">Vício em design</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-memory-card nav__icon'></i>
+                                    <span class="nav__name">Recursos</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item"></a>
+                                        <a href="#" class="nav__dropdown-item">Bibliotecas de elementos</a>
+                                        <a href="#" class="nav__dropdown-item">Bibliotecas de padrões</a>
+                                        <a href="#" class="nav__dropdown-item">Card mapping</a>
+                                        <a href="#" class="nav__dropdown-item">Card sorting visual</a>
+                                        <a href="#" class="nav__dropdown-item">Cor</a>
+                                        <a href="#" class="nav__dropdown-item">Combinatória visual</a>
+                                        <a href="#" class="nav__dropdown-item">Design para exibição</a>
+                                        <a href="#" class="nav__dropdown-item">Estilo</a>
+                                        <a href="#" class="nav__dropdown-item">Ferramentas para prototipagem física</a>
+                                        <a href="#" class="nav__dropdown-item">Ferramentas de software</a>
+                                        <a href="#" class="nav__dropdown-item">Grades de tela</a>
+                                        <a href="#" class="nav__dropdown-item">Guias de estilo</a>
+                                        <a href="#" class="nav__dropdown-item">Ícones para interativo</a>
+                                        <a href="#" class="nav__dropdown-item">Inventário</a>
+                                        <a href="#" class="nav__dropdown-item">Manuais e livros de receitas</a>
+                                        <a href="#" class="nav__dropdown-item">Mapeamento de experiências</a>
+                                        <a href="#" class="nav__dropdown-item">Movimento e interações</a>
+                                        <a href="#" class="nav__dropdown-item">Product journey</a>
+                                        <a href="#" class="nav__dropdown-item">Recursos para apresentações</a>
+                                        <a href="#" class="nav__dropdown-item">Representação de projetos</a>
+                                        <a href="#" class="nav__dropdown-item">SCAMPER visual</a>
+                                        <a href="#" class="nav__dropdown-item">Storyboarding</a>
+                                        <a href="#" class="nav__dropdown-item">Sujeito e objeto</a>
+                                        <a href="#" class="nav__dropdown-item">Tipografía para interativos</a>
+                                        <a href="#" class="nav__dropdown-item">Visual storytelling</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <!--========== HOME ==========-->
+        <main class="js-tabContent">
+            <section class="content home">
+                <h1 class="col-wide">Kit de ferramentas de design</h1>
+                <p class="col-wide">O Design Toolkit BR é a fiel tradução do <a href="http://www.design-toolkit.uoc.edu/" class="uoc" target="_blanck">Design Toolkit de la UOC</a>, (Fundació per a la Universitat Oberta de Catalunya), e está página web busca oferecer uma ferramenta ágil com conteúdos de UX e UI design para você estudar mais em menos tempo, além de guias associados que expande o conteúdo e fornece orientações específicas para sua execução.</p>
+                <img src="assets/img/toolkit(fim).png" alt="imagem html">
+                <p>É a caixa de ferramentas de design na forma de planilhas de conteúdo e recursos de aprendizagem. Os conteúdos são apresentados em listas por ordem alfabética no menu lateral, e os classifica de acordo com a sua tipologia, características e atributos. O Design Toolkit BR reúne as ferramentas mais representativas e utilizadas, especialmente aquelas que são trabalhadas ao longo dos diferentes estudos da UOC: no Bacharelado em Design e Criação Digital e, especialmente, no Mestrado Universitário em Design de Interação e Experiência do Usuário (UX).</p>
+                <p class="col-wide">A utilidade e adequação das ferramentas do toolkit depende de cada projeto em específico, do contexto em que são usadas e do designer que as usa. É por esse motivo que os apresentamos agrupados por tipo e dispostos em ordem alfabética. Convidamos você a explorar a caixa de ferramentas, navegar pelos diferentes métodos, princípios, modelos, tipos de interação, visões e recursos, para se familiarizar com cada uma das ferramentas. Isso tornará mais fácil para você começar a incorporá-los em seus projetos de design.</p>    
+                <p class="col-wide">Pode contactar-nos através de <strong>contato@designtoolkitbr.com</strong> caso identifique algum erro, falte uma ferramenta ou queira fazer alguma sugestão.</p>
+            </section>
+
+            <!--========== GUIA ARQUITETURA DA INFORMAÇÃO ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia arquitetura da informação</h2>
+                <p class="col-wide">Este guia expande a ficha de Arquitetura da Informação. A arquitetura da informação faz parte da fase de geração, após ter realizado a pesquisa e definição do produto. É construído com base nas informações obtidas nessas duas fases iniciais do projeto, e uma vez definido, conduz à prototipagem. É considerada peça fundamental no processo, pois permite começar a formalizar a proposta de design.</p>
+
+                <h3 class="col-wide">Conceitos fundamentais</h3>
+                <p class="col-wide">Arquitetura da informação é a disciplina dedicada a organizar e rotular informações. Permite determinar a estrutura e a rotulagem dos conteúdos de um produto interativo para que respondam às características e necessidades dos usuários.</p>
+                <p class="col-wide">Ele se enquadra na fase de geração e é uma fase essencial no processo de desenvolvimento do produto. É desenvolvido após a realização da pesquisa e definição dos requisitos, de forma que as informações extraídas nas fases iniciais sirvam de base para a definição da estrutura e rotulagem do conteúdo.</p>
+                <p class="col-wide">A organização do conteúdo de um serviço ou produto interativo determina que os usuários tenham fácil acesso (ou não) às informações. Portanto, uma organização adequada é fundamental para garantir uma boa experiência do usuário e que a web seja um sucesso.</p>
+
+                <h3 class="col-wide">Esquemas de informação</h3>
+                <p class="col-wide">Existem diferentes maneiras de estruturar as informações:</p>
+                <p class="col-wide"><strong>- Esquemas exatos:</strong> são aqueles que organizam as informações em grupos bem definidos e mutuamente exclusivos. Entre esses esquemas encontramos: ordem alfabética, ordem cronológica ou ordem geográfica, entre outros. Se decidirmos usar a ordem alfabética para classificar, por exemplo, uma lista de nomes de artistas, cada um dos nomes só se encaixará em uma categoria (A, B, C, etc.) com base na letra com que começa.</p>
+                <p class="col-wide"><strong>- Esquemas ambíguos:</strong> esquemas para os quais não existe uma definição exata, de modo que o mesmo item pode se enquadrar em várias categorias. Entre esses esquemas, encontramos a organização por temas, por tarefas, por públicos, por metáfora, etc.</p>
+
+                <h3 class="col-wide">Rotulagem</h3>
+                <p class="col-wide">A rotulagem de um produto ou design interativo engloba todos os rótulos (icônicos ou textuais) que são usados ​​para definir os diferentes grupos de informações. Fazer uma seleção adequada de rótulos ajuda a resolver ambigüidades e orientar o usuário, por isso também é considerado um elemento-chave na construção do produto.</p>
+                <p class="col-wide">Conforme mencionado, existem dois grandes grupos de rótulos:</p>
+                <p class="col-wide"><strong>- Rótulos icônicos:</strong> são as imagens ou ícones usados ​​para representar o conteúdo.</p>
+                <p class="col-wide"><strong>- Rótulos textuais:</strong> as palavras que são usadas como links no sistema de navegação, títulos de seção, etc. Nessa categoria, você também pode incluir as hashtags que os usuários criam em certas redes sociais (como o Instagram) para classificar as informações</p>
+
+                <h3 class="col-wide">Navegação</h3>
+                <p class="col-wide">O sistema de navegação pode ser definido como uma bússola que permite ao usuário se orientar, saber de onde veio, identificar exatamente onde está e discernir para onde pode ir.</p>
+                <p class="col-wide">Seu objetivo é, portanto, localizar o usuário, indicar quais conteúdos estão relacionados à tarefa em andamento e também facilitar o acesso a outras unidades de informação. Por isso, é importante definir o melhor local para localizar as opções de navegação e construir as diferentes rotas possíveis para que os usuários atinjam seus objetivos. Assim, terão sempre os elementos necessários para se localizar dentro do produto ou serviço sem nunca chegar a um beco sem saída.</p>
+
+                <h3 class="col-wide">Procurar</h3>
+                <p class="col-wide">Enquanto a navegação é uma tarefa que implica a exploração dos conteúdos pelo usuário, a busca implica que o usuário interroga o sistema para recuperar a informação desejada.</p>
+                <p class="col-wide">Assim, para encontrar rapidamente as informações de que precisa, o usuário pode ir diretamente ao sistema de busca, principalmente quando a estrutura do conteúdo é complexa. Em alguns casos, a pesquisa substitui a navegação, por isso é importante que a ferramenta de pesquisa seja ágil e eficiente e que forneça os resultados de forma clara e direta.</p>
+
+                <h3 class="col-wide">Estratégia de conteúdo</h3>
+                <p class="col-wide">A estratégia de conteúdo envolve a criação, publicação e gerenciamento de conteúdo para torná-lo útil e utilizável. Defina qual será o conteúdo e sua estrutura, como e quem manterá esse conteúdo e quais diretrizes devem ser seguidas para garantir um estilo consistente.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Um projeto pode partir de duas situações diferentes que terão uma influência direta na definição da arquitetura da informação:</p>
+                <p class="col-wide"><strong>- Novo projeto:</strong> neste caso, é importante ter clareza sobre os objetivos do projeto e sua definição estratégica. Você também deve investigar quais requisitos existem em termos de conteúdo: Existe conteúdo que é definido pelo cliente? Existem questões legais a serem consideradas? Que outras condições devemos considerar?</p>
+                <p class="col-wide"><strong>- Redesenho:</strong> neste caso, o conteúdo pré-existente deve ser analisado para verificar se ele corresponde aos novos objetivos e à definição estratégica do projeto.</p>
+                <p class="col-wide">Em ambos os casos, a primeira tarefa na definição da arquitetura da informação é realizar um inventário de conteúdo abrangente. No caso de um novo design, o inventário reúne as informações coletadas durante as fases de pesquisa e definição; no caso de um redesenho, se nenhuma pesquisa de usuário tiver sido feita, o inventário reunirá o conteúdo existente e garantirá que não omitamos nenhum conteúdo principal.</p>
+                <p class="col-wide">Como fazer o inventário? Depende das características do produto, mas em geral é útil utilizar uma tabela com os diferentes níveis de navegação e, se for o caso, o URL correspondente. Assim, esta tabela é preenchida com os conteúdos incluídos em cada nível e, ao final, é possível visualizar a estrutura global do conteúdo, como pode ser visto neste exemplo:</p>
+                <img class="col-wide" src="assets/img/tabela-guia-arquiteturaDeInformacao.png" alt="imagem html">
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Realizado o inventário, e a partir dele, inicia-se o processo de definição da arquitetura da informação, que permitirá organizar e rotular todo o conteúdo através das seguintes etapas:</p>
+                <p class="col-wide"><strong>- Organização e rotulagem:</strong> tanto a estrutura como a rotulagem dos conteúdos devem responder aos objetivos e estratégia do projeto. Por outro lado, é importante envolver os usuários para que a arquitetura final seja baseada em seus modelos mentais e seja o mais intuitiva possível para quem a vai utilizar. Nesse sentido, é altamente recomendável trabalhar com a técnica de classificação de cartas.
+                    Por outro lado, é importante ter em mente a natureza do projeto. Se for um projeto novo, a organização e rotulagem dos conteúdos dependerão dos objetivos e da definição estratégica, bem como das informações obtidas na fase de definição do projeto; Se, pelo contrário, é um redesenho, é necessário contrastar o inventário dos conteúdos pré-existentes com a nova definição do projeto para adicionar as modificações que se façam necessárias.</p>
+                <p class="col-wide"><strong>- Definição da estrutura do conteúdo:</strong> uma vez que a informação foi organizada e rotulada, deve ser definida uma árvore de conteúdo que permita a definição detalhada da estrutura e rotulagem das diferentes seções:</p>
+                <p class="col-wide"><strong>1 -</strong> Quais opções aparecerão nos principais elementos de navegação e em que ordem (principalmente: menu principal, opções adicionais no cabeçalho e opções no rodapé)?
+                    <strong>2 -</strong> Como o conteúdo será organizado hierarquicamente? (Quais serão os principais? Quais serão incluídos neles e quantos níveis de profundidade a estrutura terá?)</p>
+                <p class="col-wide">Para representar essa estrutura de conteúdo, um diagrama denominado árvore de conteúdo ou mapa do site é usado. Neste sentido, é importante ter em mente que o mapa do site não é um elemento que deve ser mantido sempre fixo, mas que nele serão realizadas várias iterações para refinar a estrutura o máximo possível para torná-la o mais intuitiva que possível.</p>
+                <p class="col-wide"><strong>- Avaliação da arquitetura:</strong> finalmente, é necessário avaliar a árvore de conteúdo resultante com os usuários. Para isso, utiliza-se a técnica de teste de árvore, que permite detectar se a estrutura atende às suas necessidades e é eficaz. Os resultados obtidos na avaliação conduzirão a iterações na estrutura para melhorá-la.Além disso, o processo de avaliação e iteração pode ser realizado várias vezes, se necessário, para otimizar ao máximo os resultados finais.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Uma vez realizado esse processo, a arquitetura da informação é materializada em uma árvore de conteúdo, ou mapa do site. A configuração deste depende muito das necessidades dos usuários, mas, além disso, é conveniente levar em consideração duas questões importantes:</p>
+                <p class="col-wide">- Não deve ser muito profundo: quanto mais níveis de conteúdo houver, mais difícil será para o usuário encontrar o conteúdo que procura.</p>
+                <p class="col-wide">- Não deve ser excessivamente amplo: quanto mais opções o usuário tiver ao mesmo tempo, mais difícil será para ele tomar uma decisão. Os diferentes menus e submenus não devem conter mais do que sete ou nove opções cada.</p>
+                
+                <h2 class="col-wide">Exemplos</h2>
+                <a class="col-wide" href="https://writemaps.com/wmaps/shareMap/jfyuzf0ys8i82ic" target="_blank">Writemaps</a>
+                <a class="col-wide" href="https://demos.slickplan.com/wmrvmxqj" target="_blank">Slickplan</a>
+                <a class="col-wide" href="https://www.everyinteraction.com/definition/sitemap/" target="_blank">Everyinteraction</a>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Garreta, M.</strong>; Mor, E. (2011). «Diseño centrado en el usuario» [en línea]. En: C. Casado; M. Garreta y otros. Interacción persona-ordenador (módulo 3). Barcelona: FUOC. <a href="http://materials.cv.uoc.edu/daisy/Materials/PID_00158925/html5/modul_3.html" target="_blank">Clique aqui</a> . [Data de consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>IA Institute.</strong> «IA Institute Resource Library» [en línea]. <a href="https://docs.google.com/spreadsheets/d/1fxLmmCsy2PmfPCWOtHbdlnut2gaopcy_S8b0_Z7Wkd8/edit?usp=sharing" target="_blank">Clique aqui</a> . [Data de consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>IA Institute.</strong> «We Make Information Clearer» [en línea]. <a href="http://www.iainstitute.org/" target="_blank">Clique aqui</a> . [Data de consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Klyn, D.</strong> Explaining information architecture [en línea]. <a href="https://vimeo.com/8866160" target="_blank">Clique aqui</a> . [Data de consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Monjo, T.</strong> (2011). Diseño de interacción. Barcelona: FUOC.</p>
+                <p class="col-wide"><strong>Morville, P.</strong>; Rosenfeld, L. Arango, J. (2015) Information Architecture, 4th Edition. O’Reilly.</p>
+                <p class="col-wide"><strong>UX Booth</strong> (2015). «Complete Beginner’s Guide to Information Architecture» [en línea]. UX Booth. <a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/" target="_blank">Clique aqui</a> . [Data de consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA AVALIAÇÃO HEURÍSTICA ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia avaliação heurística</h2>
+                <p class="col-wide">A avaliação heurística é uma técnica que faz parte de um processo de design centrado no usuário, na fase de avaliação.</p>
+                <p class="col-wide">Pode ser realizada durante o processo de design, uma vez que as primeiras propostas tenham sido elaboradas e os primeiros protótipos do sistema tenham sido construídos, pois isso nos permitirá corrigir aspectos de usabilidade antes de desenvolvê-lo totalmente. Também pode ser feito na fase de lançamento, uma vez desenvolvido, para diagnosticar elementos de usabilidade que não eram visíveis nas fases anteriores.</p>
+                <p class="col-wide">No caso de projetos de redesenho (em que você começa a partir de um projeto pré-existente), é altamente recomendável realizar a avaliação heurística no início do projeto sobre o design do qual você inicia, pois os resultados ajudarão a definir algumas diretrizes para a nova proposta.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Prepare ou selecione o checklist de base</h3>
+                <p class="col-wide">A avaliação heurística consiste na avaliação de um produto por um especialista ou grupo de especialistas, de acordo com um conjunto de regras e princípios de design (heurísticas) previamente estabelecidos.</p>
+                <p class="col-wide">Essas heurísticas podem ser divididas em subheurísticas, que se aprofundam em questões específicas.</p>
+                <p class="col-wide">Por exemplo, se uma heurística de design de interação é "simplicidade" (o design deve ser o mais simples possível e focado na tarefa), ela pode ser dividida nas seguintes subheurísticas:</p>
+                <p class="col-wide">- Cada etapa do processo é óbvia para o usuário.</p>
+                <p class="col-wide">- Os ícones são otimizados para que possam ser facilmente reconhecidos.</p>
+                <p class="col-wide">- Nenhum ícone semelhante é usado para representar ações diferentes.</p>
+                <p class="col-wide">As subheurísticas, portanto, permitem que questões específicas sejam avaliadas para identificar erros ou problemas de projeto.</p>
+                <p class="col-wide">A primeira tarefa do avaliador será, portanto, reunir a lista de heurísticas e subheurísticas que deseja avaliar em formato de checklist , para indicar facilmente quais estão cumpridas e quais não.</p>
+                <p class="col-wide">Cada disciplina tem sua própria heurística (as de design de interface serão diferentes, por exemplo, das de design automotivo) e, portanto, a lista de verificação resultante em cada caso será diferente. Em alguns casos, já existem checklists elaborados, que o especialista pode utilizar como recurso básico para adaptar e preparar o que for mais adequado para cada projeto.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <h3 class="col-wide">Avaliação do design</h3>
+                <p class="col-wide">A avaliação do projeto é feita individualmente por cada especialista. Antes de começar, o especialista deve examinar atentamente o projeto para se familiarizar com ele.</p>
+                <p class="col-wide">O especialista então inspeciona o projeto seguindo o checklist , que deve permitir que ele indique quais subheurísticas são atendidas e quais não são, indicando o grau de gravidade do problema a partir de três parâmetros:</p>
+                <p class="col-wide">- Com que frequência o problema ocorre: é comum ou não?</p>
+                <p class="col-wide">- O impacto do problema: os usuários podem superá-lo facilmente ou não?</p>
+                <p class="col-wide">- A persistência do problema: é resolvido imediatamente ou reaparece com o uso?</p>
+                <h3 class="col-wide">Compartilhar os resultados da inspeção</h3>
+                <p class="col-wide">Se a avaliação foi realizada por mais de um especialista, é aconselhável compartilhar os resultados. Se houver diferenças no grau de gravidade avaliado em qualquer um dos problemas, é um bom momento para discuti-lo.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">A análise dos resultados é realizada em duas dimensões:</p>
+                <p class="col-wide"><strong>- Quantitativo:</strong> coleta de dados sobre os problemas detectados e sua gravidade. Eles podem ser representados graficamente, para um melhor entendimento.</p>
+                <p class="col-wide"><strong>- Qualitativo:</strong> os problemas são descritos em ordem de prioridade (os mais graves primeiro) e as recomendações sobre a solução estão associadas a eles. Essas conclusões podem ser redigidas na forma de lista executiva e aplicável.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <p class="col-wide">Para a avaliação de designs web, existem alguns checklists disponíveis na rede:</p>
+                <p class="col-wide">- Por exemplo, <a href="http://www.uxcheck.co/" target="_blanck">UX Check</a> é uma extensão do Chrome que permite identificar problemas em um site e baixar o relatório, tudo online.</p>
+                <p class="col-wide">Existem também outros checklists de formatos editáveis, como:</p>
+                <p class="col-wide">- Checklist <a href="http://ixdchecklist.com/" target="_blanck">IXD</a></p>
+                <p class="col-wide">- <a href="https://olgacarreras.blogspot.com.es/2011/07/sirius-nueva-sistema-para-la-evaluacion.html" target="_blanck">Sirius</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Carreras, O.</strong> «Padrões formais de usabilidade e sua aplicação prática em uma avaliação heurística». Utilizável e acessível. Blog. <a href="https://olgacarreras.blogspot.com.es/2012/03/estandares-formales-de-usabilidad-y-su.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Galinus .</strong> "Princípios do design de interação de Bruce Tognazzini." <a href="http://galinus.com/es/articulos/principios-diseno-de-interaccion.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Nielsen, J.</strong> «10 Heuristics for User Interface Design». Nielsen Norman Group. <a href="http://www.useit.com/papers/heuristic/heuristic_list.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Zapata, M.</strong> «Métodos de avaliação sem usuários». <a href="http://openaccess.uoc.edu/webapps/o2/bitstream/10609/12921/8/Usabilitat_Mòdul2_Mètodes%20d¿avaluació%20sense%20usuaris.pdf" target="_blank">Clique aqui</a></p>
+            </section>
+
+            <!--========== GUIA BENCHMARKING ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia benchmarking</h2>
+                <p class="col-wide">O benchmarking é feito nos estágios iniciais de um projeto, para conhecer as características do produto de nossos concorrentes ou outros produtos não necessariamente de concorrentes, para aprender como resolver problemas.</p>
+                <p class="col-wide">Este método pode ser repetido em diferentes momentos do projeto, para analisar questões específicas, como a aparência visual dos produtos comparados.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Selecionar os produtos para analisar</h3>
+                <p class="col-wide">O primeiro passo é escolher os produtos a serem analisados. Podem ser concorrentes do nosso produto, mas também podem ser produtos que contenham funcionalidades ou que tenham objetivos semelhantes aos do projeto que estamos a desenhar.</p>
+                <p class="col-wide">Recomenda-se analisar entre 5 e 7 produtos, para ter uma visão ampla, sem dedicar tempo excessivo à revisão de questões que, com mais produtos, poderiam se repetir.</p>
+                <h3 class="col-wide">Definir os critérios de análise</h3>
+                <p class="col-wide">Para alcançar resultados relevantes, é necessário definir os critérios a serem seguidos levando em consideração os objetivos específicos da análise.</p>
+                <p class="col-wide">Os critérios podem ser gerais ou específicos. Por exemplo, a análise do conteúdo, o design ou a navegação de um site seriam critérios gerais. Como a pesquisa foi resolvida, o menu principal ou o processo de pagamento seria específico.</p>
+                <p class="col-wide">É altamente recomendável reunir esses critérios em uma tabela em que cada critério ocupe uma linha, com os produtos analisados ​​em colunas. A tabela deve permitir a inclusão de anotações.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Uma vez que os produtos e critérios foram selecionados, a tarefa de análise começa.</p>
+                <p class="col-wide">É preciso observar cada um dos produtos como se fossem usados ​​pela primeira vez e ser meticuloso, focando principalmente nos critérios estabelecidos.</p>
+                <p class="col-wide">Ambos os pontos fortes (boas práticas) e pontos fracos (problemas a serem evitados) são observados. Quaisquer outras questões relevantes para o projeto também podem ser observadas.</p>
+                <p class="col-wide">É importante realizar um registro gráfico dos produtos analisados: se forem produtos físicos, podem ser tiradas fotografias dos detalhes analisados; se forem produtos digitais (sites ou aplicativos ), é muito apropriado fazer capturas de tela dos exemplos mais notáveis.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Após a análise, as anotações são revisadas para tirar conclusões aplicáveis ​​ao projeto. Toda a documentação gerada é reunida em um relatório que deve incluir:</p>
+                <p class="col-wide">- A lista de produtos analisados, se possível com suas referências (por exemplo, se o produto tiver um site associado, incluiremos a URL).</p>
+                <p class="col-wide">- Os critérios usados ​​na análise.</p>
+                <p class="col-wide">- A análise específica de cada um dos produtos, com as respectivas anotações e imagens.</p>
+                <p class="col-wide">- Um resumo geral da análise, reunindo os pontos fortes e fracos e as notas mais destacadas. Este resumo pode incluir a tabela de critérios / produtos, com uma classificação de 0 se não atender e 10 se atender o critério de forma ideal, e toda a faixa intermediária. Uma classificação simples de 0/1 (não compatível / compatível) também pode ser usada.</p>
+                <p class="col-wide">- Um sumário executivo, em forma de lista, que sintetiza as conclusões mais relevantes e diretamente aplicáveis ​​ao projeto, acompanhado de recomendações de desenho.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <h3 class="col-wide">Modelo de tabela de análise geral</h3>
+                <img class="col-wide" src="assets/img/tabelaAnalises-benchmarking.jpg" alt="imagem html">
+                <h3 class="col-wide">Exemplo de uma página de análise de produto</h3>
+                <img class="col-wide" src="assets/img/harvard_example.jpg" alt="imagem html">
+                <h3 class="col-wide">Exemplo de uma página de análise de produto</h3>
+                <img class="col-wide" src="assets/img/Bell-example.png" alt="imagem html">
+                <p class="col-wide">Fonte <a href="https://s-media-cache-ak0.pinimg.com/originals/15/9f/ac/159facad90b515d1218eb64dcd27010e.jpg" target="_blank">Clique aqui</a></p>
+                <h3 class="col-wide">Exemplo de tabela de análise geral</h3>
+                <img class="col-wide" src="assets/img/CRM-comparison.png" alt="imagem html">
+                <p class="col-wide">Fonte <a href="https://s-media-cache-ak0.pinimg.com/originals/17/ee/36/17ee36c9988d2c258f3a44ca81fbed57.png" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Buley, L.</strong> (2013). A equipe de experiência do usuário de um só: um guia de sobrevivência de pesquisa e design . Nova York: Rosenfeld Media.</p>
+                <p class="col-wide"><strong>Danforth Media.</strong> "Conduzindo uma Análise Competitiva de UX Sólida." <a href="http://danforth.co/pages/2014/03/01/conducing-a-solid-ux-competitive-analysis/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Hanington, B.</strong>; Martin, B. (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver idéias inovadoras e soluções eficazes de design . Rockport.</p>
+                <p class="col-wide"><strong>Ronda León, R.</strong> «User Experience Design: etapas, atividades, técnicas e ferramentas». Não apenas usabilidade. <a href="http://www.nosolousabilidad.com/articulos/uxd.htm" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Travis, D.</strong> "The Beginners 'Guide to Benchmarking User Experience." <a href="http://www.userfocus.co.uk/articles/guide-to-benchmarking-UX.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Withrow, J.</strong> (2006, 27 de fevereiro) “Competitive Analysis: Understanding the Market Context”. Caixas e setas. <a href="http://boxesandarrows.com/competitive-analysis-understanding-the-market-context/" target="_blank">Clique aqui</a> [Data da visita: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA CARD SORTING ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia card sorting</h2>
+                <p class="col-wide">O card sorting permite que os usuários analisem e estruturem o conteúdo para definir a arquitetura da informação com base em seus modelos mentais.</p>
+                <p class="col-wide">Esta técnica, por um lado, ajuda a descobrir a melhor forma de organizar a informação e, por outro, permite definir os rótulos do produto ou serviço interativo. Sua implementação é rápida e econômica e os benefícios são óbvios: garante uma arquitetura de informação baseada nas expectativas do usuário, o que facilita a localização do que procura ao utilizar o produto.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">O primeiro passo para fazer uma triagem de cartões é fazer um inventário de todos os conteúdos que irão incluir o produto com base nas informações obtidas na modelagem (pessoas e cenários) e também com base nos requisitos do negócio.</p>
+                <p class="col-wide">Aqui estão algumas decisões importantes a serem tomadas:</p>
+                <p class="col-wide"><strong>- Card sorting fechado ou aberto:</strong> o primeiro permite classificar as informações com base nas categorias existentes e, no segundo, os usuários devem agrupar as informações sem categorias predefinidas. Nesse sentido, e se tratando de um novo produto ou serviço, é comum fazer uma triagem de cartão aberto para analisar como os usuários organizariam as informações; se você tem uma estrutura definida, pode realizar uma segunda rodada de escaneamento (se necessário) fazendo uma classificação fechada de cartas com base nas categorias identificadas em primeiro lugar. Se for um produto ou serviço existente ao qual você deseja adicionar conteúdo, é comum fazer uma classificação de cartão.</p>
+                <p class="col-wide"><strong>- Seleção e recrutamento de participantes:</strong> os participantes devem ser recrutados levando-se em consideração o perfil das pessoas a quem o produto é dirigido. Para que a classificação das cartas dê resultados representativos, o ideal é fazer o teste com várias pessoas, até no máximo quinze (a partir desse número, os resultados começam a se repetir).</p>
+                <p class="col-wide"><strong>- Card sorting pessoalmente ou online:</strong> dependendo da disponibilidade dos participantes, o teste pode ser feito pessoalmente (individualmente ou em grupos de até três pessoas) ou remotamente por meio de ferramenta digital.</p>
+                <p class="col-wide">Além disso, é necessário preparar os cartões que serão utilizados durante a sessão. Para isso, movemos cada um dos itens identificados durante o inventário de conteúdo em um cartão do tipo nota adesiva (se a triagem do cartão for face a face) ou digital (se o teste for feito online). O número total de cartões varia conforme o produto ou serviço (o ideal é ter no máximo 30 a 40 cartões).</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">O teste é realizado conforme descrito abaixo:</p>
+                <p class="col-wide"><strong>- Introdução e explicação:</strong> é feita a introdução e explicação da dinâmica da sessão.</p>
+                <p class="col-wide"><strong>- Entrega do cartão:</strong> os cartões são entregues aos participantes, que devem:</p>
+                <p class="col-wide"><strong>- Organizá-los:</strong> o observador pede aos participantes que os agrupem da maneira que fizer mais sentido para eles. É importante observar que eles não precisam fazer isso rapidamente, mas podem levar o tempo que quiserem até construir a estrutura que considerarem mais apropriada.</p>
+                <p class="col-wide"><strong>- Rotulá-los:</strong> uma vez que os cartões são agrupados em categorias, é necessário tratar de sua rotulagem. Se a ordenação das cartas estiver encerrada, o dirigente da sessão pode pedir aos participantes que avaliem os títulos de cada grupo e, se o julgarem adequado, propor um termo diferente (o mesmo para cada uma das cartas); se a classificação de cartas estiver aberta, entregue-lhes cartões em branco para que possam escrever o título que melhor se adequa a cada um dos grupos que criaram.</p>
+                <p class="col-wide"><strong>- Coleta de dados:</strong> é importante observar as respostas dos participantes durante e após a sessão:</p>
+                <p class="col-wide">- Durante a sessão, recomenda-se observar as reações dos usuários e anotar os comentários mais significativos (no caso de sessões individuais, é muito útil pedir-lhes que “pensem em voz alta” ao ordenar a informação). Por outro lado, quando os participantes fizeram a classificação, é muito útil perguntar por que eles classificaram ou rotularam as informações da maneira como o fizeram (suas respostas podem nos ajudar a entender o modelo mental subjacente).</p>
+                <p class="col-wide">- Assim que o teste for concluído, as categorizações e marcas resultantes serão analisadas.</p>
+                <p class="col-wide"><strong>- Duração da sessão:</strong> é comum que o card sorting dure cerca de 60 minutos.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Quando todos os testes foram feitos, é hora de analisar os dados para tirar conclusões e poder definir a árvore de conteúdo do produto.</p>
+                <p class="col-wide">Primeiro, é necessário analisar os dados quantitativos. Se a classificação dos cartões foi feita por meio de uma plataforma online, esse tipo de ferramenta geralmente facilita a análise usando matrizes de similaridade ou dendrogramas; se, por outro lado, os testes foram feitos pessoalmente, é necessário analisar detalhadamente os grupos resultantes para identificar as categorizações e rótulos que se repetem e transferir essas informações com as conclusões para uma ficha (pode ser coletada, por exemplo, em um documento Excel).</p>
+                <p class="col-wide">Por fim, após a análise quantitativa, é necessário abordar a análise do retorno qualitativo coletado durante o trabalho de campo: comentários, reações, observações, etc. A combinação dos dois tipos de dados maximizará as conclusões e será possível definir uma arquitetura de informação adequada ao modelo mental dos usuários.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <a class="col-wide" href="https://icons8.com/articles/card-sorting-explanation-example-online-tools/" target="_blank">Icons8 Blog</a>
+                <a class="col-wide" href="https://rosenfeldmedia.com/card-sorting/eurostar-card-sorting-case-stu/" target="_blank">Rosenfeld</a>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Hudson, W.</strong> “Card Sorting” [artigo online]. R: M. Soegaard; RF Dam. A enciclopédia da interação humano-computador (2ª ed.). Fundação de Design de Interação. <a href="http://www.interaction-design.org/encyclopedia/card_sorting.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Mozyrko, B.</strong> (2015). «Seleção de cartas: um guia rápido e sujo para iniciantes». Geek de usabilidade. <a href="https://usabilitygeek.com/card-sorting-quick-guide-for-beginners/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Sherwin, K.</strong> (2018). "Card Sorting: descubra os modelos mentais dos usuários para uma melhor arquitetura da informação". Nielsen Norman Group. <a href="https://www.nngroup.com/articles/card-sorting-definition/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Sinyakov, S.</strong> (2013). «A classificação de cartões pode melhorar a usabilidade de seus designs?» [artigo online]. Design Instruct. <a href="http://designinstruct.com/web-design/card-sorting-usability-designs/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Usabilidade.gov .</strong> “Card Sorting” [artigo online]. <a href="https://www.usability.gov/how-to-and-tools/methods/card-sorting.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA CENÁRIOS ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia cenários</h2>
+                <p class="col-wide">A técnica de modelagem conhecida como cenários faz parte dos estágios iniciais de desenvolvimento do produto (pesquisa e definição). Os dados extraídos da pesquisa são utilizados para realizar o método de personas e, a partir dos arquétipos do usuário identificados com esse método, são desenvolvidos os cenários.</p>
+                <p class="col-wide">Lene Nielsen afirma que o método das personas adquire valor no momento em que os arquétipos identificados aparecem em um palco e utilizam o produto. Nesse sentido, criar um cenário consiste em descrever uma situação de forma narrativa e sequencial, explicando como um usuário interage com o produto para atingir um objetivo específico ou para realizar uma tarefa específica. Os cenários incluem detalhes dessa experiência do usuário e são sempre elaborados do ponto de vista do usuário (com base em suas características, necessidades e motivações).</p>
+                <p class="col-wide">É importante diferenciar cenários de casos de uso. Os casos de uso incluem uma descrição detalhada das funcionalidades do produto ou serviço em que é destacado como o sistema reage às ações dos usuários. Os cenários, por outro lado, descrevem a interação do ponto de vista do usuário para detectar quais funcionalidades incluir para atender às suas necessidades.</p>
+                <p class="col-wide">Portanto, o método de cenários permite responder à pergunta “o quê?”: O que o produto deve fazer e quais recursos ele deve incluir para atender aos objetivos das pessoas que o usarão? Além disso, essa técnica também permite:</p>
+                <p class="col-wide">- Sempre mantenha o usuário no centro do processo de design.</p>
+                <p class="col-wide">- Explore o contexto de uso do produto.</p>
+                <p class="col-wide">- Formalize e compartilhe expectativas e ideias.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">O material necessário para criar os cenários é:</p>
+                <p class="col-wide">- Os dados extraídos da pesquisa de contexto realizada.</p>
+                <p class="col-wide">- Os arquivos pessoais que descrevem diferentes aspectos dos perfis de usuário identificados: objetivos, necessidades, expectativas, histórico , experiência, etc.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Criar um cenário envolve dar vida aos arquétipos identificados no método de personas, fazendo-os usar o sistema para analisar a interação e extrair os requisitos do produto. Isso é conseguido através da elaboração de uma história que reflita uma situação de uso e que deve conter, como qualquer história, os seguintes elementos narrativos:</p>
+                <p class="col-wide"><strong>- Abordagem:</strong> a história começa apresentando a ação. Descreve o objetivo que o usuário deseja alcançar com o produto, que inclui informações contextuais e todos os dados do perfil que podem influenciar a ação (conhecimento prévio, nível de uso, problemas a serem superados, etc.).</p>
+                <p class="col-wide"><strong>- Ação:</strong> uma vez que a ação foi considerada, é hora de descrever como a interação do usuário com o produto se desenvolve. É importante explicar em detalhes as ações que você realiza para atingir seu objetivo, os obstáculos que você encontra e também o retorno que você obtém do produto com cada ação.</p>
+                <p class="col-wide"><strong>- Resultado:</strong> é necessário explicar o resultado da história incluindo o que a pessoa alcança ao realizar a interação e as consequências que esse resultado tem para ela ou para a pessoa.</p>
+                <p class="col-wide"><strong>- Contexto:</strong> o contexto é um elemento transversal que atravessa a história do início ao fim. É importante considerar todos os aspectos que podem ter um impacto significativo na interação entre o usuário e o sistema: a situação em que você usa o produto, a hora, o local onde ele está e assim por diante.</p>
+                <p class="col-wide">Antes de finalizar os cenários, é importante iterar a proposta para revisar se os objetivos e motivações do usuário estão claros, se todos os detalhes da ação são realizados, se o contexto está bem definido, etc.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Os cenários permitem:</p>
+                <p class="col-wide">- Conheça melhor os usuários explorando seu contexto de uso, tenha empatia com sua perspectiva e saiba como eles usarão o produto.</p>
+                <p class="col-wide">- Colete <em>insights</em> que ajudam a identificar os requisitos do produto.</p>
+                <p class="col-wide">- Projete uma solução que atenda às expectativas do usuário. Como Lene Nielsen argumenta, a dimensão criativa dos cenários estimula a geração de ideias de design.</p>
+                <p class="col-wide">Além disso, os cenários estimulam a comunicação entre os diferentes membros da equipe e estimulam o alinhamento na visão sobre o produto que as equipes possuem.</p>
+                <p class="col-wide">No entanto, não se deve perder de vista que os cenários podem criar a falsa impressão de que todas as situações foram consideradas (Lene Nielsen). Além disso, não são um material estático, mas é necessário iterá-los diante de mudanças em qualquer uma das variáveis ​​envolvidas no design: o conhecimento que temos dos usuários, os objetivos do negócio, o contexto geral, etc.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <a class="col-wide" href="http://www.questionablemethods.com/2011/11/scenarios-are-your-product-ideas.html" target="_blank">Questionable Methods</a>
+                <a class="col-wide" href="http://www.uiaccess.com/accessucd/scenarios_eg.html" target="_blank">Uiaccess</a>
+                <a class="col-wide" href="https://www.pinterest.es/tonamonjo/ux-scenarios/" target="_blank">Pinterest</a>
+                <a class="col-wide" href="https://medium.muz.li/how-scenarios-help-the-design-process-c5177b213953" target="_blank">Muzli</a>
+                <img class="col-wide" src="assets/img/cenarios-exemplo.jpg" alt="imagem html">
+                <p class="col-wide">Cenários - UX Knowledge Base Sketch # 16. Fonte: Krisztina Szerovay. <a href="https://uxknowledgebase.com/scenarios-43e05671b07" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Carroll, JM</strong> (1995). Projeto baseado em cenários: prevendo o trabalho e a tecnologia no desenvolvimento de sistemas . John M. Carroll.</p>
+                <p class="col-wide"><strong>Cooper, A.; Reimann, R.; Cronin, D., et al.</strong> (2014). Sobre o rosto: os fundamentos do design de interação . John Wiley & Sons. </p>
+                <p class="col-wide"><strong>Hanington, B.; Martin, B.</strong> (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+                <p class="col-wide"><strong>Nielsen, L.</strong> Personas . <a href="https://www.personas.dk" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Patton, J.; Economy, P.</strong> (2014). Mapeamento da história do usuário: descubra toda a história, crie o produto certo . O'Reilly Media, Inc.</p>
+            </section>
+
+            <!--========== GUIA diagrama de fluxo ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia diagrama de fluxo</h2>
+                <p class="col-wide">O diagrama de fluxo é um método de design centrado no usuário inscrito nas fases de definição e geração que permite representar cada uma das etapas da interação do usuário até atingir seu objetivo.</p>
+                <p class="col-wide">Essa técnica é baseada em informações que foram tratadas anteriormente em cenários e user journeys e representa mais uma etapa na definição do design. Na fase de modelagem, os cenários nos ajudam a descrever de forma narrativa como um usuário usa o produto ou serviço e nos ajudam a responder à pergunta "o quê?": O que o produto ou serviço deve fazer e quais funcionalidades ele deve incluir? para tornar mais fácil para os usuários atingirem seus objetivos? Com base nessas informações, desenvolvemos user journeys incorporando as expectativas, emoções e nível de satisfação do usuário em cada etapa da interação. Essa técnica nos ajuda a entender melhor o contexto, detectar fragilidades na interação e também oportunidades de melhorias.</p>
+                <p class="col-wide">Tomando como ponto de partida todas as informações obtidas em cenários e user journeys , os diagramas visam definir e analisar detalhadamente a interação com a representação de todas as opções possíveis que um usuário encontra ao realizar uma tarefa. Portanto, fazer diagramas de fluxo permite:</p>
+                <p class="col-wide">- Visualize as páginas ou o conteúdo com o qual o usuário interage e as ações necessárias para atingir seu objetivo.</p>
+                <p class="col-wide">- Entenda de onde vem o usuário e qual será seu próximo destino.</p>
+                <p class="col-wide">- Identifique becos sem saída, ações que requerem retorno e possíveis erros na lógica da interação.</p>
+                <p class="col-wide">Por outro lado, dependendo do tipo de interação, os diagramas de fluxo podem representar:</p>
+                <p class="col-wide">- <strong>Fluxos de tarefas:</strong> fluxos que são exclusivos para todos os usuários e, portanto, serão feitos da mesma forma, como o registro em um aplicativo. Neste tipo de fluxo é necessário analisar a interação e determinar a melhor navegação. Seguindo o exemplo de registro em um aplicativo, não podemos estendê-lo em muitas etapas ou campos de formulário, mas devemos encontrar o equilíbrio ideal entre as informações de que precisamos e o tempo que os usuários estão dispostos a gastar ali.</p>
+                <p class="col-wide">- <strong>Fluxos de usuário:</strong> fluxos não fechados que representam a interação de um usuário específico. Eles não são únicos ou lineares, mas cada pessoa traça um caminho ao longo do produto ou serviço, como procurar um produto em uma loja online. Neste caso é necessário analisar todas as rotas possíveis e tentar otimizar a experiência.</p>
+                <p class="col-wide">O objetivo dos diagramas de fluxo é, portanto, analisar detalhadamente os percursos mais importantes do produto ou serviço para otimizá-los, e também comunicar ao restante da equipe como a interação deve ser desenvolvida.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Antes da elaboração dos diagramas, é necessário levar em consideração, por um lado, as informações que eles representarão e, por outro lado, os elementos visuais que utilizaremos para desenhá-los.</p>
+                <p class="col-wide">Quanto às informações, é muito útil ter feito a modelagem ( personas e cenários), e também as user journeys (ou outros métodos, como o storyboard ou casos de uso) e a árvore de conteúdo do produto ou serviço.</p>
+                <p class="col-wide">Em relação à representação visual dos diagramas, recomenda-se seguir o padrão de formas e cores definidas a seguir:</p>
+                <img class="col-wide diagramaImagem" src="assets/img/formasPadronizadaDiagramas.jpg" alt="imagem html">
+                <p class="col-wide">Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/diagrama-de-flux/" target="_blank">Clique aqui</a></p>
+                <p class="col-wide">Embora não haja um padrão fechado sobre a aparência dos diagramas, o uso desses formulários se espalhou e, como permitem que a interação seja representada de forma relativamente rápida, são comumente usados ​​neste efeito. No entanto, existem outros formatos que podem ser considerados dependendo das características do produto ou serviço.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Para desenvolver diagramas, recomenda-se seguir o seguinte processo:</p>
+                <p class="col-wide">1° - Defina o ponto de partida e o ponto final da interação: defina como começa a interação do usuário com o produto ou serviço e seja claro sobre seu objetivo final (sempre com base na modelagem de personas e cenários).<br>Por exemplo: ponto de partida = abrir o aplicativo; objetivo = pedir comida em casa.</p>
+                <p class="col-wide">2° - Determine a sequência de etapas. Dependendo da estrutura da árvore de conteúdo, defina a sequência de etapas de interação do usuário do início ao fim.<br>Por exemplo, faça login > menus disponíveis> menu de detalhes x > seleção de menu x > Digite o endereço> pagamento> confirmação.</p>
+                <p class="col-wide">3° - Aplique as seguintes perguntas para cada uma das etapas identificadas:<br>
+                    - o que acontece antes desta etapa?<br>
+                    - o que acontece depois?<br>
+                    - esta etapa é uma ação direta ou o usuário precisa tomar uma decisão?<br>
+                    - é necessária alguma ação para dar o próximo passo?<br>
+                    - e se as coisas não correrem como deveriam?<br>
+                    - são necessários caminhos alternativos?<br>
+                    Neste ponto, o objetivo é identificar quais etapas da interação envolvem a decisão do usuário de considerar todos os caminhos possíveis.</p>
+                <p class="col-wide">4° - “Desenhe” o diagrama com todas as informações definidas nos três passos anteriores, crie o diagrama seguindo o padrão de formulários descrito na seção “Preparação”.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Uma vez que os diagramas tenham sido elaborados, é necessário analisar os resultados levando em consideração que eles permitem:</p>
+                <p class="col-wide">- Detecte possíveis erros antes de prosseguir com o desenvolvimento do produto ou serviço.</p>
+                <p class="col-wide">- Identifique cada etapa da interação para analisar de onde vem e para onde vai o usuário, de forma que as necessidades dos usuários sejam sempre levadas em consideração e que a interação faça sentido.</p>
+                <p class="col-wide">Execute iterações rápidas durante o processo de design ou desenvolvimento.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide diagramaImagem" src="assets/img/diagramaUOC.jpg" alt="imagem html">
+                <p class="col-wide">Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/diagrama-de-flux/" target="_blank">Clique aqui</a></p>
+                <img class="col-wide diagramaImagem" src="assets/img/diagramaCriately.jpg" alt="imagem html">
+                <p class="col-wide pFonte">Fonte: <a href="https://www.creately.com" target="_blank">Clique aqui</a></p>
+                <img class="col-wide diagramaImagem" src="assets/img/diagramaDeFluxo.jpg" alt="imagem html">
+                <p class="col-wide pFonte">Fonte: elaboração própria</p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Baskanderi, N.</strong> (2017). «Glossário UX: fluxos de tarefas, fluxos de usuários, fluxogramas e algumas coisas novas». <a href="https://uxplanet.org/ux-glossary-task-flows-user-flows-flowcharts-and-some-new-ish-stuff-2321044d837d" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Handley, A.</strong> (2018). "O fluxo do usuário é o novo wireframe". <a href="https://uxdesign.cc/when-to-use-user-flows-guide-8b26ca9aa36a" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Hanington, B.</strong>; Martin, B. (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+            </section>
+
+            <!--========== GUIA experience map ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia experience map</h2>
+                <p class="col-wide">Experience map representa visualmente uma experiência completa (do início ao fim). Descreve as etapas e os passos que um usuário percorre para atingir uma meta, além de expressar o que pensa e sente ao longo dessa jornada. Os eventos são representados cronologicamente em diferentes fases.</p>
+                <p class="col-wide">O experience map integra quatro componentes fundamentais:</p>
+                <p class="col-wide"><strong>- Fases:</strong> correspondem às diferentes etapas pelas quais o usuário passa para atingir seu objetivo.</p>
+                <p class="col-wide"><strong>- Ações:</strong> são as atividades específicas que o usuário realiza em cada uma das fases.</p>
+                <p class="col-wide"><strong>- Pensamentos:</strong> são as ideias que o usuário forma na mente para realizá-las ou aquelas de que necessita para passar uma fase ou para realizar uma determinada ação.</p>
+                <p class="col-wide"><strong>- Emoções:</strong> correspondem às reações do usuário a cada uma das fases ou ao realizar uma determinada ação.</p>
+                <p class="col-wide">Essa ferramenta também nos ajudará a:</p>
+                <p class="col-wide">- Compreender uma experiência como um todo.</p>
+                <p class="col-wide">- Identificar o comportamento de um usuário desde o início da experiência até que ele alcance seu objetivo.</p>
+                <p class="col-wide">- Identificar os pontos problemáticos dos usuários.</p>
+                <p class="col-wide">- Identificar oportunidades não atendidas e opções alternativas para oferecer ao usuário.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Antes de moldar um experience map, você deve primeiro refletir sobre a experiência. Para isso, devemos nos esforçar para entender as diferentes fases pelas quais passa o usuário, sem nos focar ou nos limitar a um único produto ou tipo de usuário. Trata-se de descrever uma experiência genérica, aplicável a uma diversidade de usuários.</p>
+                <p class="col-wide">Portanto, é recomendável começar fazendo um ou mais esboços à mão livre (sketches) do futuro experience map em uma escala muito global, ou seja, sem entrar em detalhes sobre os pensamentos e emoções do usuário. É apenas uma questão de descobrir por quais fases o usuário passa e quais ações ele realiza em cada caso.</p>
+                <p class="col-wide">Os esboços permitem ensaiar ideias e retrabalhá-las rapidamente. Para prepará-los basta papel e lápis ou material de desenho. Também é aconselhável ter postagens para adicionar notas.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Uma vez que a análise de alto nível foi feita usando os esboços, é hora de moldar o experience map. Estamos trabalhando em um diagrama de colunas e linhas:</p>
+                <p class="col-wide">- As colunas, que geralmente correspondem às fases pelas quais o usuário passa, são subdivididas em ações.</p>
+                <p class="col-wide">- As linhas servem para descrever essas ações, além de incluir os pensamentos e emoções que o usuário vivencia em cada fase.</p>
+                <p class="col-wide">Para construir o experience map, é recomendado seguir estas etapas:</p>
+                <p class="col-wide">1ª - Defina como título a meta a ser representada.</p>
+                <p class="col-wide">2ª - Identifique as fases da experiência a serem descritas e atribua-lhes uma coluna. Elas devem estar em ordem e seguir uma seqüência de tempo.</p>
+                <p class="col-wide">3ª - Faça uma lista das ações incluídas em cada uma das fases e coloque-as em ordem nas colunas correspondentes.</p>
+                <p class="col-wide">4ª - Uma vez definidas as ações, pode-se analisar se o usuário deve tomar alguma decisão ao longo do processo. No experience map podemos presumir uma seleção possível ou diversificá-la com vários ramos. Por exemplo, para comprar um ingresso para um museu, o usuário pode escolher entre usar a internet ou comprá-lo na bilheteria.</p>
+                <p class="col-wide">5ª - Sempre defina o início e o fim do experience map (onde começamos e quando concluímos a tarefa ou objetivo).</p>
+                <p class="col-wide">6ª - Reflita, em cada fase ou ação, os pensamentos do usuário (normalmente, o experience map inclui uma linha de pensamentos, que é dividida nas colunas correspondentes).</p>
+                <p class="col-wide">7ª - Identifique, para cada fase ou ação, quais emoções o usuário experimenta (normalmente, o experience map inclui uma linha para emoções, que é dividida nas colunas correspondentes).</p>
+                <p class="col-wide">8ª - Apresente o trabalho a um colega para ver como ele o lê e para determinar se está tudo claro.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Um bom experience map reflete as ações, pensamentos e emoções de um usuário genérico em cada uma das fases necessárias para atingir um determinado objetivo. É um excelente documento para nos ajudar a entender o cenário em que ocorrem as ações do usuário, bem como para identificar oportunidades de melhoria de um serviço ou de criação de novos produtos.</p>
+                <p class="col-wide">O experience map é uma ferramenta que pode ser utilizada como base para a geração de user journeys , ou seja, representações mais específicas do itinerário que segue um determinado perfil de usuário para atingir um objetivo utilizando um produto ou serviço determinado.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/experienceMap.jpg" alt="imagem html">
+                <p class="col-wide">Experience map. Trem da Europa (por Adaptive Path ). Fonte: <a href="https://cdn-images-1.medium.com/max/2400/1*TFCx_f2n0FCoEZkYpAuP3g.jpeg" target="_blank">Clique aqui</a></p>
+                <p class="col-wide">A figura acima mostra um experience map sobre a experiência de uma pessoa em um trem na Europa. As colunas incluem as fases pelas quais o usuário passa para usar um trem e as linhas coletam a descrição das ações, bem como o que o usuário pensa, sente e experimenta em cada fase.</p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Adaptive Path</strong> (2013). "Guia do Adaptive Path para Mapeamento de Experiência".</p>
+                <p class="col-wide"><strong>Nielsen Norman Group</strong> (2017). "Métodos de mapeamento UX comparados: uma folha de dicas." <a href="https://www.nngroup.com/articles/ux-mapping-cheat-sheet/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA mapa conceitual ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia mapa conceitual</h2>
+                <p class="col-wide">A abordagem dos mapas conceituais como método foi desenvolvida por Joseph Novak, que buscou uma nova ferramenta para descrever a evolução do conhecimento adquirido pelas crianças. Novak ensinou seus alunos a criar representações visuais para mostrar seu conhecimento de questões de abordagem, como “O que é água?”. Os mapas conceituais nos permitem capturar visualmente os conceitos adquiridos e a forma como os assimilamos nas estruturas cognitivas existentes.</p>
+                <p class="col-wide">Os mapas conceituais apresentam uma estrutura proposicional na qual conceitos interconectados enunciam unidades de significado por meio de proposições. Para fazer isso, esse tipo de diagrama possui uma estrutura hierárquica em que os conceitos mais gerais estão na parte superior do mapa e os mais específicos na parte inferior. A leitura é feita de cima para baixo. Os mapas conceituais são compostos dos seguintes componentes:</p>
+                <h3 class="col-wide">Conceitos</h3>
+                <p class="col-wide">Os conceitos são definidos como “padrões em objetos ou eventos” e são representados em figuras geométricas no diagrama. Cada conceito representado no mapa conceitual é relevante para explicar o significado do conceito de hierarquia superior. Devem ser apresentados de forma organizada e hierárquica, para que haja relações apenas entre os mais relevantes, de forma a poder explicar de forma clara e concisa o conceito principal.</p>
+                <h3 class="col-wide">Linhas de conexão e palavras de link</h3>
+                <p class="col-wide">Em um mapa conceitual, as linhas de conexão não são suficientes para determinar a relação que existe entre os conceitos. Essas linhas são acompanhadas por palavras de ligação que conectam elementos e especificam a relação entre os conceitos. Eles geralmente são concisos e contêm um verbo.</p>
+                <h3 class="col-wide">Proposições</h3>
+                <p class="col-wide">É fomentada pela união de vários conceitos ou termos que se relacionam, por meio de palavras de ligação.</p>
+                <h3 class="col-wide">Links cruzados</h3>
+                <p class="col-wide">Links cruzados são relacionamentos entre conceitos que pertencem a diferentes proposições no mapa conceitual, permitindo que você visualize como as ideias se conectam em diferentes domínios. Esses tipos de links estimulam a criatividade e a descoberta de relacionamentos e novas ideias ou conclusões que de outra forma não apareceriam.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">O mapa conceitual é desenvolvido a partir de uma pergunta que foca na definição do problema que queremos explicar ou resolver. Identifique o tópico e a questão de abordagem a serem desenvolvidos. O próximo passo na preparação é identificar os conceitos-chave associados à ideia principal e gerar uma lista com eles (essa lista é chamada de “estacionamento”). Eles devem ser classificados por categorias, do conceito mais geral ao mais específico, e descrever cada conceito o mais brevemente possível.</p>
+                <p class="col-wide">Selecione um meio para desenhar. Você precisa ter um canva (em papel ou digital) para trabalhar e ter espaço suficiente para adicionar as informações.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Aqui estão as etapas básicas para criar um mapa conceitual:</p>
+                <p class="col-wide">1ª - Coloque a palavra que identifica a ideia principal no topo do mapa. Hierarquicamente, essa palavra está localizada no topo do mapa conceitual e atua como um ponto de origem.</p>
+                <p class="col-wide">2ª - Localize no mapa os diferentes conceitos categorizados desde o ponto de partida, na parte superior, até os mais específicos na parte inferior.</p>
+                <p class="col-wide">3ª - Conecte a palavra que identifica a ideia central do mapa conceitual com os diferentes conceitos por meio de linhas retas e, sucessivamente, nos diferentes níveis hierárquicos.</p>
+                <p class="col-wide">4ª - Adicione palavras de link nas linhas para indicar como os conceitos se relacionam entre si. Essas palavras geralmente são verbos e devem ser muito específicas para estabelecer claramente sua relação.</p>
+                <p class="col-wide">5ª - No final da proposta do mapa, leia de cima para baixo as propostas geradas para garantir que todas as relações estão corretas e que a pergunta da abordagem está devidamente explicada. A partir daqui, as correções apropriadas podem ser feitas.</p>
+                <p class="col-wide">6ª - Adicione links cruzados para conectar conceitos em diferentes domínios conceituais.</p>
+                <img class="col-wide" src="assets/img/mapaConceitual1.svg" alt="imagem html">
+                <p class="col-wide">Etapas 1 e 2 da elaboração de um mapa conceitual<br>Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/mapa-conceptual/" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/mapaConceitual2.svg" alt="imagem html">
+                <p class="col-wide">Etapa 3 da elaboração de um mapa conceitual<br>Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/mapa-conceptual/" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/mapaConceitual3.svg" alt="imagem html">
+                <p class="col-wide">Etapas 4 e 5 da elaboração de um mapa conceitual<br>Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/mapa-conceptual/" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/mapaConceitual4.svg" alt="imagem html">
+                <p class="col-wide">Etapa 6 da elaboração de um mapa conceitual<br>Fonte: <a href="http://design-toolkit.recursos.uoc.edu/guia/mapa-conceptual/" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Os mapas conceituais servem para capturar o conhecimento atual sobre um tópico e autoavaliar sua compreensão. Eles nos ajudam a sintetizar informações integrando novos e antigos conceitos, enquanto geram uma visão global sobre um tópico.</p>
+                <p class="col-wide">Eles são uma ferramenta que nos permite avaliar hipóteses e identificar áreas do assunto que estamos trabalhando, que precisam de mais conhecimento ou desenvolvimento. Além disso, facilitam a visualização das relações entre ideias, promovendo a descoberta de novos conceitos e suas conexões.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/mapaConceitualAdaptado.svg" alt="imagem html">
+                <p class="col-wide">Fonte: adaptado de <a href="https://sites.google.com/site/organizadoresgraficosymas/home/organizadores-graficos/mapa-conceptual" target="_blank">Clique aqui</a></p>
+                <h3 class="col-wide">Mapa conceitual, mapa mental e mapa cognitivo</h3>
+                <p class="col-wide">Existem outros métodos complementares ao mapa conceitual, como o mapa mental ou mapas cognitivos. As diferenças tipológicas e de uso entre os diferentes tipos de mapas e suas principais características estão listadas abaixo.</p>
+                <h3 class="col-wide">Mapas conceituais</h3>
+                <p class="col-wide">- Eles são usados ​​para representar o conhecimento tácito ou teorias existentes. Geralmente, as ideias são geradas externamente</p>
+                <p class="col-wide">- Eles tendem a representar o conhecimento acadêmico, então sua aplicação é mais formal.</p>
+                <p class="col-wide">Eles colocam o conhecimento geral no setor superior do mapa, com conceitos relacionados que são organizados hierarquicamente abaixo.</p>
+                <p class="col-wide">Eles mostram tópicos com vários relacionamentos e links cruzados.</p>
+                <h3 class="col-wide">Mapas mentais</h3>
+                <p class="col-wide">Criar um mapa mental é um método exploratório para ajudá-lo a entender, tanto em detalhes quanto como um todo, um problema. Os mapas mentais apresentam uma estrutura em árvore que representa a categorização e descrição de um tema, que se localiza no centro, através dos diferentes conceitos que o compõem, que por sua vez também podem ser ramificados em conteúdos mais específicos.</p>
+                <p class="col-wide">- Eles podem apresentar um conjunto de idéias ou desenvolver um conceito.</p>
+                <p class="col-wide">- Eles tendem a representar uma variedade maior de conceitos, portanto, sua aplicação é mais flexível para a representação de diferentes situações ou problemas.</p>
+                <p class="col-wide">- Eles partem de uma palavra, um problema ou um conceito no centro do mapa, com ideias relacionadas projetadas em todas as direções.</p>
+                <p class="col-wide">- Exibe temas com um componente principal do qual vários componentes secundários emergem.</p>
+                <p class="col-wide">Eles não precisam mostrar relações entre ideias ou conceitos.</p>
+                <img class="col-wide" src="assets/img/mapa-mental.svg" alt="imagem html">
+                <p class="col-wide">Fonte do mapa mental : adaptado de <a href="https://www.nngroup.com/articles/cognitive-mind-concept/" target="_blank">Clique aqui</a></p>
+                <p class="col-wide">Mapas mentais podem ser feitos para diferentes propósitos. O uso mais básico é dividir um produto existente em todos os seus elementos, que podem ser físicos, características ou argumentos. A partir deste mapa podemos aprender sobre sua funcionalidade, a quantidade de elementos que o compõem, os diferentes materiais, etc. Além disso, novas ideias podem ser extraídas dele. Assim, modificando apenas um elemento, podemos obter um novo conceito sobre a mesma ideia inicial.</p>
+                <p class="col-wide">No mesmo sentido, podemos visualizar um problema dividindo-o em suas causas (ou aquelas que, em princípio, pensamos serem as causas). Com base na mesma estrutura radial dos mapas mentais, também podemos explorar uma ideia por meio de seis questões básicas: "o quê?", "Por quê?", "Como?", "Quando?", "Quem?" e "onde?" Ou, se levantarmos um pensamento mais divergente, poderíamos desenvolver o mapa mental com o “método Walt Disney”. Neste método, existem três maneiras diferentes de abordar o pensamento criativo: a do sonhador, a da pessoa realista e a do crítico. Semelhante ao método de Walt Disney é o "método dos seis chapéus para pensar", de Eduard de Bono, conforme mostrado no exemplo a seguir:</p>
+                <img class="col-wide" src="assets/img/metodo-seisChapeusParaPensar.jpg" alt="imagem html">
+                <p class="col-wide">Visual Thinking por Luki Huber<br>Fonte: <a href="https://www.leadersummaries.com/images/contenidos/lametodologia4714087html1.jpg" target="_blank">Clique aqui</a></p>
+                <p class="col-wide">Outra aplicação baseada no mapa mental seria a checklist Osborn (ou SCAMPER ), que se baseia em uma lista de questões das quais se pretende alterar algo conhecido: o que posso modificar, expandir, minimizar, substituir, reorganizar ou combinar? ». Visto que cada questão está associada a uma forma de pensar muito característica, exploraremos, da mesma fonte, seis maneiras muito diferentes de ver o mesmo conceito um do outro.</p>
+                <h3 class="col-wide">Mapas cognitivos</h3>
+                <p class="col-wide">Mapas cognitivos são qualquer representação do modelo mental sobre um processo ou conceito. Eles compartilham as seguintes características:</p>
+                <p class="col-wide">- Eles podem incluir métodos visuais diferentes e não têm regras visuais rígidas a serem seguidas, sem restrições sobre como os diferentes componentes são posicionados e as relações entre eles.</p>
+                <p class="col-wide">- Esta liberdade de forma os torna adequados para uma ampla gama de aplicações, mas ao mesmo tempo requer experiência anterior, devido à possível complexidade dos dados ou processos a serem exibidos.</p>
+                <p class="col-wide">- Seu principal uso é tornar visíveis os pensamentos ou modelos mentais sobre os processos.</p>
+                <img class="col-wide" src="assets/img/mapaCognitivo.svg" alt="imagem html">
+                <p class="col-wide">Mapa cognitivo<br>Fonte: adaptado de <a href="https://www.nngroup.com/articles/cognitive-mind-concept/" target="_blank">Clique aqui</a></p>
+                <h3 class="col-wide">Comparação entre os diferentes mapas</h3>
+                <img class="col-wide" src="assets/img/tabela-mapa-conceitual.png" alt="imagem html">
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Buzan, T.</strong> (1993). O livro do mapa mental . Londres: BBC Books.</p>
+                <p class="col-wide"><strong>Eden, C.</strong> (1988). "Mapeamento cognitivo". European Journal of Operational Research , núm. 36, pág. 1-13.</p>
+                <p class="col-wide"><strong>Eppler, Martin J.</strong> (2006). "Uma comparação entre mapas conceituais, mapas mentais, diagramas conceituais e metáforas visuais como ferramentas complementares para construção e compartilhamento de conhecimento." Visualização de Informação , vol. 5, núm. 3, pág. 202-210.</p>
+                <p class="col-wide"><strong>Huber, L.; Veldman, GJ</strong> (2015). Pensamento manual: uma ferramenta para gerenciar o trabalho em equipe criativo . Barcelona: Empresa ativa.</p>
+                <p class="col-wide"><strong>Nielsen Norman Group</strong> (2019). "Mapas cognitivos, mapas mentais e mapas conceituais." <a href="https://www.nngroup.com/articles/cognitive-mind-concept/" target="_blank">Clique aqui</a></p>
+                <p class="col-wide"><strong>Novak, JD; Gowin, DB</strong> (1984). Aprendendo como aprender . New York, NY: Cambridge University Press.</p>
+                <p class="col-wide"><strong>Huber, L.; Veldman, GJ</strong> (2015). Pensamento manual: uma ferramenta para gerenciar o trabalho em equipe criativo . Barcelona: Empresa ativa.</p>
+            </section>
+
+            <!--========== GUIA observação contextual ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia observação contextual</h2>
+                <p class="col-wide">A observação contextual é uma técnica que faz parte, dentro de um processo de design centrado no usuário, na fase de pesquisa. Portanto, geralmente é feito no início do projeto, quando seus objetivos são conhecidos e é necessário obter informações sobre os usuários e o contexto em que o produto ou serviço será utilizado.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Definição do escopo</h3>
+                <p class="col-wide">Ao realizar uma pesquisa contextual - ou qualquer tipo de pesquisa de usuário - é importante definir junto com o cliente qual é o foco, ou seja, o que você deseja entender por meio da pesquisa e o que será necessário observar para se chegar a esse entendimento.</p>
+                <p class="col-wide">O foco permite que você estabeleça limites para a pesquisa, para mantê-la focada em tópicos que são realmente relevantes. Porém, o pesquisador deve manter uma atitude aberta, pois durante a pesquisa podem surgir questões inesperadas que precisam ser levadas em consideração.</p>
+                <p class="col-wide">- Uma semana para preparar o roteiro e planejar as visitas.</p>
+                <p class="col-wide">- Uma semana para realizar as visitas.</p>
+                <p class="col-wide">- Uma semana de análise.</p>
+                <p class="col-wide">Ao nível do orçamento, é necessário ter em consideração o tempo de trabalho e também se será necessário efectuar viagens que envolvam despesas.</p>
+                <h3 class="col-wide">Identificação do usuário</h3>
+                <p class="col-wide">Os usuários que nos fornecerão informações relevantes e confiáveis ​​são aqueles que estão realizando a tarefa a ser analisada.</p>
+                <p class="col-wide">Antes de começar, precisamos identificar as características dos usuários representativos e ver se eles podem se reunir em grupos de características semelhantes. Idealmente, a observação deve ser baseada em um mínimo de 5 ou 6 usuários de cada grupo representativo.</p>
+                <p class="col-wide">Devemos evitar observar usuários que não possuem relação direta com o serviço ou produto, pois oferecem uma visão idealizada das condições de uso.</p>
+                <p class="col-wide">Por exemplo, se o projeto envolver a pesquisa de atendimento ao cliente de uma empresa, os agentes que realizam esse serviço diretamente devem ser observados; entrevistar gerentes e cargos de nível médio pode fornecer informações úteis sobre o histórico, mas não substitui a observação direta dos envolvidos.</p>
+                <h3 class="col-wide">Planejamento da sessão</h3>
+                <p class="col-wide">Organizar a pesquisa contextual pode envolver um esforço significativo, pois as técnicas com usuários envolvem complexidade no gerenciamento de agendas.</p>
+                <p class="col-wide">Para planejar sessões com usuários, você precisa antecipar a duração das sessões. Se trata-se de observar um dia inteiro de trabalho, será necessário reservar um dia inteiro para realizá-lo, mas se trata-se de observar uma tarefa específica, pode-se perguntar ao usuário quanto tempo normalmente leva para realizar e reservar o tempo em conformidade.</p>
+                <p class="col-wide">De qualquer forma, é recomendável não fazer mais do que duas observações contextuais por dia. As sessões tendem a exigir muita atenção e a fadiga diminui a capacidade de observação.</p>
+                <p class="col-wide">As sessões precisam ser gravadas. Também é aconselhável estar acompanhado de um assistente que faz anotações, para que o pesquisador possa se concentrar na observação e fazer perguntas que possibilitem informações relevantes.</p>
+                <h3 class="col-wide">Elaboração do roteiro das sessões</h3>
+                <p class="col-wide">Embora as sessões de observação contextual não possam ser estritamente roteirizadas, o pesquisador deve preparar um protocolo com os seguintes conteúdos:</p>
+                <p class="col-wide"><strong>- Apresentação:</strong> como o pesquisador se apresenta ao usuário e como explica o propósito da pesquisa. É importante garantir o anonimato do usuário participante.</p>
+                <p class="col-wide"><strong>- Questionário demográfico:</strong> o usuário é questionado brevemente sobre questões demográficas que podem ser relevantes para o projeto (idade, gênero, ocupação, nível de experiência com tecnologia, entre outros). Evite incluir perguntas irrelevantes ou excessivamente pessoais.</p>
+                <p class="col-wide"><strong>- Formulário de consentimento:</strong> se a sessão for gravada ou dados identificáveis ​​do usuário forem usados, o usuário deve assinar um formulário de consentimento. Caso o usuário não queira se cadastrar, a observação deve ser realizada sem cadastro.</p>
+                <p class="col-wide"><strong>- Questionário final:</strong> no final da sessão, geralmente são feitas algumas perguntas ao usuário sobre questões que não foram claras ou que você deseja aprofundar. Também é um bom momento para perguntar ao usuário se deseja comentar algo, pois isso pode fornecer informações relevantes e imprevistas.</p>
+                <p class="col-wide"><strong>- Remuneração:</strong> em caso de que tenha sido combinado, no final da sessão o usuário é reembolsado. E sempre se agradece a sua participação.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Devido à natureza da observação contextual, em que o usuário deve agir da forma mais normal possível, cada sessão de observação é diferente e imprevisível. No entanto, existem algumas diretrizes que podem facilitar a obtenção de informações.</p>
+                <h3 class="col-wide">Quebre o gelo com o usuário</h3>
+                <p class="col-wide">Para agir normalmente, o usuário deve se sentir em um ambiente de confiança. O pesquisador precisa deixar claro que não está sendo avaliado, mas quer entender como trabalha, quais ferramentas usa, como é seu espaço de trabalho, etc., com o objetivo de melhorar o produto ou serviço. Deve-se destacar que a participação do usuário é muito importante neste processo de melhoria.</p>
+                <h3 class="col-wide">Adote um modelo de observação</h3>
+                <p class="col-wide">Dependendo do tipo de pesquisa, um desses dois modelos de observação pode ser escolhido:</p>
+                <p class="col-wide"><strong>- Observação passiva:</strong> em que o participante é solicitado a agir como se o pesquisador não estivesse presente. Este observa o utilizador de forma silenciosa, sem o interromper e procurando, na medida do possível, não alterar as suas condições habituais. Este método é frequentemente utilizado em ambientes onde o ritmo de trabalho é muito rápido ou quando o usuário não pode ser interrompido (por exemplo, nas informações do hospital). As perguntas são reservadas para os momentos em que não alteram a ordem normal das ações.</p>
+                <p class="col-wide"><strong>- Observação ativa:</strong> na qual o participante assume um papel de professor em relação ao pesquisador, que atuaria como aprendiz, assumindo o papel de usuário para poder vivenciar por si mesmo as tarefas e questioná-las. Também neste caso, é necessário combinar com o participante quando as questões podem ser colocadas, ou quando podem ser interrompidas. Este modelo é o mais comum, pois as informações obtidas durante a execução das tarefas costumam ser mais confiáveis.</p>
+                <p class="col-wide">Antes de iniciar a observação, o usuário deve ser informado qual modelo será utilizado e como será realizado.</p>
+                <h3 class="col-wide">Perguntas para observar durante a sessão</h3>
+                <p class="col-wide">Além de ver como o usuário realiza um processo ou utiliza um produto ou serviço, durante a sessão é importante observar questões como:</p>
+                <p class="col-wide"><strong>- Contexto de uso:</strong> é feito em ambiente silencioso ou com interrupções? O usuário está isolado ou no meio de outras pessoas? Você trabalha sozinho ou em grupo?</p>
+                <p class="col-wide"><strong>- Interrupções:</strong> você trabalha sem interrupções ou as tem com frequência? De onde elas vêm: de outras pessoas em seu ambiente, celular, e-mail, etc? Que impacto essas interrupções têm em seu processo? Quanto tempo leva para retornar ao processo quando ele foi interrompido?</p>
+                <p class="col-wide"><strong>- Uso do dispositivo:</strong> você acessa a Internet? Você tem uma boa conexão? Você usa um dispositivo como fone de ouvido, teclado, telefone celular, impressora, etc.? Você os tem em mãos ou precisa viajar para chegar lá?</p>
+                <p class="col-wide"><strong>- Uso de aplicativos:</strong> quais aplicativos ou sites você usa? Em que ordem?</p>
+                <p class="col-wide"><strong>- Objetos:</strong> quais objetos você usa no seu trabalho: blocos de notas, papéis, lápis, calculadora, etc.?</p>
+                <p class="col-wide"><strong>- Problemas:</strong> quais problemas o usuário encontra? Você pode consertá-los? Como? Que esforço é necessário para corrigi-los? Que implicações emocionais esses problemas têm?</p>
+                <p class="col-wide"><strong>- Starters:</strong> quais são os eventos que fazem com que o usuário inicie uma determinada tarefa: e-mails, ligações, etc.?</p>
+                <p class="col-wide"><strong>- Variações:</strong> é necessário investigar se o que se observa é o processo de trabalho usual do usuário ou se existem variações relevantes (por exemplo, um dia particularmente estressante ou especialmente calmo).</p>
+                <h3 class="col-wide">Não interferir nas ações do usuário</h3>
+                <p class="col-wide">O pesquisador não deve fazer recomendações ou explicar como o usuário poderia melhorar o uso do serviço ou produto, mesmo que se sinta tentado a fazê-lo. O objetivo do pesquisador é ver como o usuário faz isso, não ensinar o usuário a fazer melhor.</p>
+                <h3 class="col-wide">Fazer perguntas</h3>
+                <p class="col-wide">O pesquisador deve fazer (durante ou após a sessão, dependendo do modelo de observação adotado) quaisquer perguntas que não veja com clareza ou sobre as quais precise de mais informações. Você também deve evitar inferir ou fazer deduções pessoais sobre os motivos pelos quais o usuário está agindo de determinada maneira. É melhor pecar por excesso do que por defeito.</p>
+                <p class="col-wide">As perguntas devem ser neutras e não conter sugestões ou críticas, para evitar enviesar as respostas.</p>
+                <h3 class="col-wide">Resumir a sessão para o usuário</h3>
+                <p class="col-wide">Ao final da sessão, o pesquisador deve resumir para o usuário o que ele entendeu, para verificar se algum ponto não foi entendido corretamente ou precisa ser aprofundado.</p>
+                <h3 class="col-wide">Gravar as sessões</h3>
+                <p class="col-wide">Para garantir que questões que apresentam dúvidas possam ser revistas, é altamente recomendável gravar as sessões, desde que esse registro possa ser feito de forma ágil e não envolva uma logística complexa que interfira no desenvolvimento da tarefa ou do sua observação.</p>
+                <p class="col-wide">Além disso, o pesquisador deve anotar as questões mais relevantes. Boas anotações economizarão muito tempo na revisão das gravações.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Quatro documentos-chave emergem da análise das sessões:</p>
+                <h3 class="col-wide">Análise de tarefas</h3>
+                <p class="col-wide">Identificação das tarefas realizadas ao longo das sessões.</p>
+                <p class="col-wide">Uma boa ferramenta para representar tarefas são os diagramas de fluxo ( Fluxograma ), que podem identificar o início e o término da tarefa, os principais momentos intermediários, o uso de dispositivos ou interações com outras pessoas, entre outros detalhes relevantes.</p>
+                <h3 class="col-wide">Análises das necessidades</h3>
+                <p class="col-wide">Lista com itens que os usuários solicitaram explicitamente ou que, sem serem solicitados, poderiam tê-los ajudado. Esses itens podem ser incluídos no produto ou serviço?</p>
+                <p class="col-wide">Essa lista pode ajudar a avaliar o design do produto ou serviço existente: os recursos que agora apresenta serão realmente valorizados pelos usuários ou é melhor concentrar esforços em outros recursos?</p>
+                <h3 class="col-wide">Pessoas</h3>
+                <p class="col-wide">A partir da observação dos usuários (e também através de outras técnicas de pesquisa, tais como entrevistas ou inquéritos), podem surgir pessoas que definam as características, necessidades e dificuldades dos usuários do produto ou serviço. </p>
+                <h3 class="col-wide">Relatório executivo</h3>
+                <p class="col-wide">O relatório executivo resume as informações encontradas, as idéias-chave obtidas e a lista de observações diretamente aplicáveis ​​ao design do produto ou serviço. O objetivo deste relatório é comunicar os resultados da pesquisa de uma forma que seja útil para outros membros da equipe e para qualquer membro da organização que esteja interessado.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <h3 class="col-wide">Biblioteca Carnegie de Pittsburgh</h3>
+                <p class="col-wide">Projeto Maya Design em que o método de observação contextual foi utilizado para redesenhar a experiência da biblioteca. <a href="http://maya.com/work/carnegie-library-of-pittsburgh" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/observacio-contextual-ex.jpg" alt="imagem html">
+                <p class="col-wide">Fonte: <a href="https://i.ytimg.com/vi/l0kisgj51o4/maxresdefault.jpg" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Gaffney, G.</strong> (2004, 10 de dezembro) "Contextual Inquiry - First." SitePoint. <a href="https://www.sitepoint.com/contextual-enquiry-primer/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Holtzblatt, K.</strong>; Beyer, H. (1996). “Introdução às técnicas contextuais. In Conference Companion on Human Factors in Computing Systems (CHI '96) ». Association for Computing Machinery, New York, NY, USA, 320. DOI: <a href="https://doi.org/10.1145/257089.257344" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Fundação de Design de Interação.</strong> “Entrevistas contextuais e como lidar com elas” [online]. <a href="https://www.interaction-design.org/literature/article/contextual-interviews-and-how-to-handle-them" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>«Bem-vindo ao Corpo de Conhecimento de Usabilidade».</strong> <a href="http://www.usabilitybok.org/contextual-inquiry" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA persona ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia persona</h2>
+                <p class="col-wide">Persona é um método que faz parte, dentro de um processo de design centrado no usuário, na fase de pesquisa. Portanto, geralmente é feito no início do projeto, quando seus objetivos e o contexto em que o produto ou serviço será utilizado são conhecidos. Portanto, as informações sobre os usuários já foram obtidas com algum outro método, como a observação contextual.</p>
+                <p class="col-wide">O método persona nos ajudará a:</p>
+                <p class="col-wide">- Ter uma ideia clara do seu público-alvo ( stakeholders ).</p>
+                <p class="col-wide">- Falar sobre os usuários e suas motivações específicas para usar seu produto ou serviço.</p>
+                <p class="col-wide">- Ter empatia com o usuário para tomar decisões de design com base em sua percepção cognitiva e emocional de seu produto ou serviço.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Todo o material dos usuários ou stakeholders relacionado ao produto ou serviço deve ser bem elaborado para que todas as informações estejam disponíveis. Se os usuários são conhecidos ou os modelos de pessoa foram feitos anteriormente, eles podem ser usados ​​como referência ou modelo.</p>
+                <p class="col-wide">É aconselhável trabalhar em perfis de usuário com papel e notas adesivas, quadro branco com marcadores de cores diferentes ou outras estratégias semelhantes para mover e redefinir as informações de cada pessoa .</p>
+                <p class="col-wide">Também pode ser interessante tirar diferentes fotografias genéricas de mulheres, homens, crianças, etc. Dependendo do nosso perfil de usuário, podemos escolher um ou outro para preencher cada pessoa .</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">É recomendável que você siga estas etapas:</p>
+                <p class="col-wide">1ª - Identifique os atributos mais notáveis ​​que diferenciam um segmento de usuários de outros. Deve ser possível encontrar facilmente entre 2 e 6 desses atributos para começar a trabalhar.</p>
+                <p class="col-wide">2ª - Neste ponto, determinamos o número de tokens ou fichas que queremos trabalhar com o intervalo de valores dos diferentes atributos encontrados. Não se preocupe se encontrar atributos mais notáveis ​​durante a pesquisa. Sinta-se à vontade para adicioná-los se os achar interessantes.</p>
+                <p class="col-wide">3ª - Depois de decidir o número de pessoas com quem queremos trabalhar, fazemos uma primeira proposta preenchendo os atributos que detectamos. É hora de adicionar algumas informações demográficas, comportamentos e motivações para usar seu serviço ou produto.</p>
+                <p class="col-wide">4ª - Iteramos sobre a pessoa básica que criamos e tentamos formalizá-la e visualizá-la em uma única página. Lembre-se que é um material que você utilizará em todo o processo de design e é importante tê-lo em mãos e que seja fácil de usar. Você pode experimentar diferentes visualizações e formatos de apresentação antes de escolher o mais adequado para o seu caso específico.</p>
+                <p class="col-wide">5ª - Depois de definir as pessoas, é importante compartilhá-las e mostrá-las a outros membros da equipe ou stakeholders, para ver outros pontos de vista e poder incluir ou extrair informações. É uma boa prática para refinar a pessoa.</p>
+                <p class="col-wide">6ª - Como etapa adicional, podemos voltar às fichas iniciais e ver se a pessoa resultante se encaixa em todas as informações que tínhamos. A partir desta etapa, podemos iterar novamente para refinar e melhorar a pessoa .</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">A ficha de persona nos dá uma perspectiva precisa de como os grupos de usuários pensam e agem com nosso sistema ou produto. É uma forma de não perder de vista os objetivos dos nossos usuários, o que é muito importante na tomada de decisões de design. Lembre-se de que os tokens de pessoa não são usuários reais, mas representações abstratas organizadas por motivações, comportamentos e interesses comuns.</p>
+                <p class="col-wide">Lembre-se de que, para que as personas sejam uma ferramenta eficaz, é necessário trabalhar com rigor e meticulosamente para identificar atributos significativos e determinar cuidadosamente os padrões comuns de comportamento, interesses e motivações.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/persona_perCATiCAST.png" alt="imagem html">
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Carroll, JM.</strong> (1995). Projeto baseado em cenários: prevendo trabalho e tecnologia no desenvolvimento de sistemas.</p>
+                <p class="col-wide"><strong>Cooper, A.; Reimann, R.; Cronin, D.; Noessel, C.</strong> (2014). Sobre o rosto: os fundamentos do design de interação . John Wiley & Sons.</p>
+                <p class="col-wide"><strong>Hanington, B.; Martin, B.</strong> (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+                <p class="col-wide"><strong>Patton, J.; Economy, P.</strong> (2014). Mapeamento da história do usuário: descubra toda a história, crie o produto certo . O'Reilly Media, Inc.</p>
+            </section>
+
+            <!--========== GUIA prototipagem ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia prototipagem</h2>
+                <p class="col-wide">Um protótipo é um modelo do produto ou serviço que inclui aspectos funcionais, estruturais e gráficos do design. É feito na fase de geração, após ter feito a pesquisa e definidos os objetivos e principais aspectos do projeto.</p>
+                <p class="col-wide">No domínio teórico da experiência do usuário (UX), não há um consenso claro sobre as diferenças e o escopo de conceitos como wireframe , mockup , protótipo de baixa fidelidade e protótipo de alta fidelidade. No entanto, no contexto profissional, a importância da prototipagem como um processo chave para materializar a proposta de valor e iterar o design e interação para uma versão final otimizada é generalizada.</p>
+                <p class="col-wide">O processo de prototipagem é iterativo e evolui desde as primeiras propostas de baixa fidelidade, ainda longe do projeto final, até a alta fidelidade, que define as características que o produto ou serviço deve ter quando utilizado pelos usuários. A prototipagem alterna-se, portanto, com a avaliação em um processo de iteração contínua que permite otimizar progressivamente o projeto até atingir a proposta que será desenvolvida.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Por um lado, antes de começar a prototipar é necessário ter clareza sobre os objetivos do projeto e quais as principais interações que iremos representar. Nesse sentido, é aconselhável ter feito a árvore de conteúdo do produto ou serviço e ter bem definidos os principais fluxos de interação.</p>
+                <p class="col-wide">Por outro lado, a prototipagem é um processo iterativo que consiste em diferentes fases nas quais o designer pode trabalhar sozinho ou colaborativamente. Portanto, antes de começar a prototipar é necessário planejar as diferentes fases levando em consideração os objetivos do projeto, seu grau de complexidade e também o tempo e os recursos disponíveis.</p>
+                <p class="col-wide">Além disso, se a intervenção de usuários reais está prevista em algum ponto do processo de prototipagem, é necessário definir diferentes aspectos da dinâmica de cocriação que será realizada:</p>
+                <p class="col-wide">- Quantas dinâmicas serão realizadas?</p>
+                <p class="col-wide">- Em que ponto ou pontos do processo de prototipagem eles participaram?</p>
+                <p class="col-wide">- Quais são os objetivos e a metodologia de cada dinâmica?</p>
+                <p class="col-wide">- Quantas pessoas participarão e que perfil terão (usuários, clientes, designers, outras partes interessadas)?</p>
+                <p class="col-wide">- Quanto tempo vai durar a dinâmica?</p>
+                <p class="col-wide">- Que logística envolvem?</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">A prototipagem é realizada em várias fases e o resultado obtido em cada uma significa um grau crescente de "fidelidade" (ou aproximação ao projeto final):</p>
+                <p class="col-wide"><strong>- Sketching:</strong> O processo geralmente começa com um esboço que incentiva a rápida geração e iteração de ideias (considere o problema de diferentes ângulos e proponha diferentes soluções) a um custo muito baixo de tempo e recursos.<br> O sketching é realizado com materiais muito básicos, como lápis e papel, marcadores e etc. O objetivo é que o material não interfira na ideação, mas que favoreça para que seja fluida e rápida, o que convida à experimentação.<br> Pode ser feito de forma individual ou colaborativa, sempre levando em consideração as condições e objetivos do projeto definidos nas fases de pesquisa e definição. Se for realizado de forma colaborativa, você pode trabalhar com a técnica de design studio, que permite iterações rápidas, eficientes e frequentemente disruptivas.<br> Uma vez feito, os esboços podem ser enriquecidos adicionando certos detalhes, como um título ou descrição, setas para representar a interação, gestos envolvidos em certas telas (se projetarmos para dispositivos de toque), e assim por diante.</p>
+                <p class="col-wide"><strong>- Prototipagem de baixa fidelidade ( wireframe ):</strong> A partir das ideias extraídas do sketching ou esboço , é construído um protótipo de baixa fidelidade que representa a estrutura e interação do produto ou serviço sem ainda incluir elementos gráficos do design, o que favorece que a iteração seja rápida.<br> O wireframe representa um primeiro modelo de design, mas ainda é um protótipo de desenvolvimento rápido que inclui pouco nível de detalhe. Seu objetivo é avaliar e iterar a proposta para avançar em direção a modelos mais evoluídos.</p>
+                <p class="col-wide"><strong>- Prototipagem de alta fidelidade:</strong> Uma vez validada a estrutura e interação proposta no wireframe , elementos gráficos (logotipo, cores, ícones, imagens, etc.) são incorporados ao protótipo para começar a visualizar (e avaliar) a aparência do design final.<br> À medida que evoluem, os protótipos são cada vez mais refinados e próximos da aparência, funcionalidade e recursos do produto ou serviço final.</p>
+                <p class="col-wide">Finalmente, após várias iterações com protótipos de fidelidade crescente (lembre-se que essas iterações podem supor a aplicação de técnicas de avaliação de diferentes tipos), obtém-se um protótipo ou modelo final, que inclui todas as aparências e funcionalidades do produto ou serviço a ser replicado na fase de desenvolvimento.</p>
+                <p class="col-wide">No caso de produtos ou espaços, o modelo físico pode ser complementado com um protótipo digital. Este protótipo permite representar claramente funcionalidades ou realizar simulações que seriam muito caras ou complexas para incluir no modelo físico.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Ao longo das diferentes fases de prototipagem, é necessário fazer avaliações para testar a proposta de design, observar como os usuários a utilizam e incorporar as melhorias relevantes.</p>
+                <p class="col-wide">Por fim, quando o produto ou serviço for executado ou lançado no mercado, é necessário continuar avaliando seu funcionamento. Isso envolve a retomada do protótipo para fazer as iterações necessárias (modificações, novos recursos, etc.) para que o design responda às necessidades de mudança dos usuários em todos os momentos.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/wireframe1.jpg" alt="imagem html">
+                <p class="col-wide">Sketching. Fonte: <a href="https://www.toptal.com/designers/ux/guide-to-ux-sketching" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/wireframe2.jpg" alt="imagem html">
+                <p class="col-wide">Wireframe. Fonte: <a href="https://uxplanet.org/basics-of-prototyping-1a4106e12c0e" target="_blank">Clique aqui</a></p>
+                <img class="col-wide" src="assets/img/wireframe4.jpg" alt="imagem html">
+                <p class="col-wide">Protótipo de alta fidelidade. Fonte: <a href="https://www.sketch.com/s/3KYRa/all/app/home_screen_breakfast_label/play" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Banerjee, A.</strong> (2014). "O que é (e não é) um protótipo" [artigo online]. Revista UX. <a href="http://uxmag.com/articles/what-a-prototype-is-and-is-not" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Cao, J.</strong> (2017). "O que é um protótipo: um guia para UX funcional" [artigo online]. Studio by UXPin. <a href="https://www.uxpin.com/studio/blog/what-is-a-prototype-a-guide-to-functional-ux/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Grothaus, M.</strong> (2015). “Como ir da ideia ao protótipo em um dia” [artigo online]. Fast Company. <a href="https://www.fastcompany.com/3045934/how-to-go-from-idea-to-prototype-in-one-day" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Hanington, B.</strong> (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+                <p class="col-wide"><strong>Smith, Q.</strong> (2019). Experiência do usuário de prototipagem. [artigo online]. <a href="https://www.uxmatters.com/mt/archives/2019/01/prototyping-user-experience.php" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA questionários ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia questionários</h2>
+                <p class="col-wide">Os questionários são uma técnica exploratória que nos permite reunir informações por meio das respostas dos usuários. É, portanto, uma bateria de perguntas destinadas a obter informações sobre uma realidade que queremos descobrir com um certo nível de profundidade e detalhe.</p>
+                <p class="col-wide">Por esse motivo, eles podem ser incluidos em diferentes fases de um processo de design centrado nas pessoas, pois oferecem respostas sobre como os usuários usam um produto interativo.</p>
+                <p class="col-wide">Portanto, o uso de questionários pode ser dado por diferentes aspectos que podem ser localizados nas diferentes fases do processo de design centrado nas pessoas. Por exemplo, os questionários podem ser usados ​​nos estágios iniciais da pesquisa para coletar dados sobre as pessoas para as quais estamos projetando uma solução ou para contrastar quantitativamente os dados obtidos por meio do uso de alguma técnica qualitativa, como a entrevista. No entanto, seu uso mais comum é durante a fase de avaliação, seja para descobrir a satisfação geral do uso do produto ou serviço pelo usuário, ou para coletar aspectos relacionados à sua utilidade, uso e usabilidade.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Definir os objetivos da pesquisa</h3>
+                <p class="col-wide">Antes de iniciar o desenho das questões é necessário ter claro quais são os objetivos da pesquisa que será realizada, ou seja, quais são as informações que precisamos obter. Essa reflexão inicial determina o tipo de questionário a ser utilizado, o tipo de perguntas a serem utilizadas, a redação das mesmas, a ordem, a distribuição e a amostra que precisa ser respondida em nossas perguntas.</p>
+                <p class="col-wide">Assim, a primeira coisa a fazer é definir a hipótese de pesquisa e, a partir dela, responder às seguintes questões:</p>
+                <p class="col-wide">- Qual é o objetivo da pesquisa?</p>
+                <p class="col-wide">- Que informações são necessárias para testar a hipótese?</p>
+                <p class="col-wide">- Quais são os dados mais relevantes que precisamos obter?</p>
+                <p class="col-wide">- Que dados adicionais precisamos ou podemos obter?</p>
+                <h3 class="col-wide">Definição de amostra, logística e distribuição de questionário</h3>
+                <p class="col-wide">Uma vez bem definido o ponto anterior, é necessário definir quem deve responder às perguntas do questionário, para ficar claro qual a margem de erro que o nosso questionário pode ter dependendo do número de pessoas que têm que responder, e planejar quais serão os meios pelos quais os usuários responderão, bem como quando o farão e como serão enviados.</p>
+                <p class="col-wide">Não faz sentido, por exemplo, perguntar ao usuário se ele gosta de um aplicativo assim que acaba de baixá-lo ou pedir que avalie o processo de compra por e-commerce se ainda não o tiver usado. Da mesma forma que é necessário decidir a que horas o questionário será apresentado ao usuário, é necessário decidir o formato que será enviado a ele: e-mail, notificação automática, ligação telefônica, etc.</p>
+                <p class="col-wide">Todos esses detalhes determinarão o desenho subsequente das perguntas, pois afetarão a duração e a extensão do questionário, bem como a redação das afirmações e até mesmo a escolha do software específico para a criação e distribuição do questionário. Que dados adicionais precisamos ou podemos obter?</p>
+                <h3 class="col-wide">Questionários padronizados</h3>
+                <p class="col-wide">Para medição de usabilidade e satisfação subjetiva de usabilidade, existem questionários padronizados que facilitam a tarefa de avaliação de uma interface. Esses questionários são geralmente usados ​​após um teste com os usuários, seja para guiar um redesenho ou para avaliar um novo design antes de colocá-lo no mercado.</p>
+                <p class="col-wide">A vantagem desses questionários é que eles já possuem questões e métricas pré-estabelecidas que são utilizadas para analisá-los. Pelo contrário, não nos permitem adaptar as questões ao produto / serviço específico que estamos a pesquisar, pelo que vale a pena reflectir bem sobre o momento exacto em que vale a pena apostar num questionário padronizado.</p>
+                <p class="col-wide"><strong>SUS (System Usability Scale)</strong><br>O objetivo do questionário SUS é fornecer um teste de pontuação e preenchimento rápido e fácil para avaliar a usabilidade percebida pelos usuários. Desta forma, também é possível estabelecer comparações entre sistemas. O questionário do SUS é um dos mais utilizados para a coleta de informações após um teste-tarefa, pois suas 10 questões visam descobrir as sensações percebidas pelo usuário durante a utilização de um sistema interativo. Cada questão tem uma escala de 1 a 5 como resposta, onde 1 significa “Discordo totalmente” e 5 “Concordo totalmente”. O usuário deve responder a todas as perguntas.</p>
+                <p class="col-wide">Perguntas do questionário do SUS:</p>
+                <p class="col-wide">- Acho que gostarei de usar esse sistema com frequência.</p>
+                <p class="col-wide">- Achei o sistema desnecessariamente complexo.</p>
+                <p class="col-wide">- Achei o sistema fácil de usar.</p>
+                <p class="col-wide">- Acho que precisaria do apoio de um especialista para analisar o sistema.</p>
+                <p class="col-wide">- Achei as várias possibilidades do sistema muito bem integradas.</p>
+                <p class="col-wide">- Achei que havia muita inconsistência no sistema.</p>
+                <p class="col-wide">- Imagino que a maioria das pessoas aprenderia a usar o sistema muito rapidamente.</p>
+                <p class="col-wide">- Achei o sistema muito estranho de usar.</p>
+                <p class="col-wide">- Tenho me sentido muito confiante em lidar com o sistema.</p>
+                <p class="col-wide">- Preciso aprender muito antes de manusear o sistema confortavelmente.</p>
+                <p class="col-wide">A escala do questionário do SUS, baseada no estilo Likert, permite tratar os dados de forma que o resultado final seja um valor único que represente uma medida composta da usabilidade do sistema global estudado. Desta forma, deve-se notar que as pontuações independentes não são significativas por si mesmas, uma vez que a pontuação geral precisa ser calculada.</p>
+                <p class="col-wide">Para calcular o resultado é necessário somar as contribuições de cada ponto, levando em consideração que cada ponto valerá entre 0 e 4. É necessário aplicar esta regra para obter as contribuições de cada ponto:</p>
+                <p class="col-wide">Para os pontos 1, 3, 5, 7 e 9, 1 deve ser subtraído da posição da escala.</p>
+                <p class="col-wide">Para os pontos 2, 4, 6, 8 e 10, deve ser adicionado 1 à posição da escala.</p>
+                <p class="col-wide">Uma vez que tenhamos o valor total por meio da soma de todas as contribuições, multiplicamos o resultado por 2,5 e assim obteremos o valor global do SUS, um resultado entre 0 e 100.</p>
+                <p class="col-wide">A escala de usabilidade do sistema não é diagnóstica; portanto, ele fornece apenas uma pontuação para entender se a usabilidade geral de um sistema foi considerada boa ou não.</p>
+                <p class="col-wide">A pontuação média na escala é 68. Se a pontuação for inferior a 68, isso significa que é muito provável que haja sérios problemas de usabilidade que precisam ser identificados e resolvidos. Uma pontuação acima de 68 é considerada positiva, mas denota que há alguma deficiência na usabilidade. Portanto, é sempre necessário acompanhar o SUS com uma análise qualitativa para contextualizar e compreender os dados.</p>
+                <p class="col-wide">O SUS é de uso gratuito, desde que citada a fonte: Copyright Digital Equipment Corporation, 1986.</p>
+                <p class="col-wide"><strong>Outros questionários</strong><br>Existem muitos outros questionários padronizados com foco em usabilidade e satisfação, alguns com licenças gratuitas e abertas e outros que devem ser adquiridos para serem usados:</p>
+                <p class="col-wide"><strong>- SUMI (Software Usability Measurement Inventory):</strong> o SUMI é um questionário que permite avaliar a qualidade de um conjunto de software. É muito útil para avaliar produtos e compará-los com versões anteriores. A desvantagem é que consiste em um total de 50 perguntas. A principal vantagem é que com a resposta de 12 a 30 usuários já existe amostra suficiente para obter resultados interessantes.</p>
+                <p class="col-wide"><strong>- MUMMS (Measuring The Usability of Multi-Media Systems):</strong> MUMMS tem o mesmo objetivo que SUMI, mas a principal diferença é que inclui cinco subescalas:<br>- Um focado em medir as respostas emocionais do usuário.<br>- Um no grau de controle que o usuário sente.<br>- Um no grau de eficiência com que o usuário acredita que pode atingir seus objetivos por meio da interação.<br>- O nível de ajuda e assistência fornecida pelo sistema.<br>- A facilidade de aprendizagem percebida pelo usuário.</p>
+                <p class="col-wide"><strong>- SUPRQ (Standardized Used Experience Percentile Rank Questionnaire):</strong> SUPRQ é um questionário de 8 perguntas que mede a qualidade da experiência do usuário com um produto interativo. Para fazer isso, ele se concentra em quatro dimensões do produto interativo: usabilidade, credibilidade, satisfação e aparência. As respostas também são configuradas em uma escala Likert de 1 a 5, onde 1 significa “Discordo totalmente” e 5 “Concordo totalmente”. Possui uma ferramenta que acompanha a licença (não é um questionário de acesso aberto) que permite calcular os valores de cada dimensão e fazer comparações dentro da sua base de dados.</p>
+                <p class="col-wide">Existem outros questionários padronizados que vale a pena conhecer:</p>
+                <p class="col-wide">- CSUQ (Computer System Usability Questionnaire).</p>
+                <p class="col-wide">- ASQ (After-Scenario Questionnaire).</p>
+                <p class="col-wide">- CUSI (Computer User Satisfaction Inventory).</p>
+                <p class="col-wide">- USE (Usefulness, Satisfaction, and Ease of Use).</p>
+                <p class="col-wide">- ISONORM 9241/10.</p>
+                <p class="col-wide">- PUEU (Perceived Usefulness and Ease of Use).</p>
+                <h3 class="col-wide">Projetar nosso próprio questionário: tipos de perguntas</h3>
+                <p class="col-wide">Deve-se notar que o uso de questionários geralmente responde à necessidade de obter informações que desejamos tratar quase que automaticamente. Assim, é importante conhecer as características que devem ter as perguntas a colocar e ter a possibilidade de escolher, a qualquer momento, o tipo de pergunta que melhor se adequa ao tipo de informação a obter.</p>
+                <p class="col-wide"><strong>Perguntas abertas</strong><br>Estas são as perguntas nas quais permitimos que os usuários escrevam suas respostas. Permitem obter nuances e detalhes, mas ao mesmo tempo são difíceis de automatizar, pois não podem ser tabulados.</p>
+                <p class="col-wide"><strong>Perguntas fechadas</strong><br>São perguntas que oferecem opções de resposta fechadas, ou seja, oferecem as diferentes alternativas que o usuário pode responder. Permitem o processamento automático dos dados obtidos, mas se as respostas possíveis não forem desenhadas pensando em todas as opções existentes, podem causar vieses e perda de riqueza. Deve-se ter em mente que, se forem respostas de uma escolha, as alternativas devem ser mutuamente exclusivas. Por outro lado, se forem questões de múltipla escolha, é necessário delimitar o número mínimo e máximo de opções que o usuário pode selecionar. Outro aspecto a ter em mente ao projetar as respostas é que elas não precisam seguir uma ordem específica, pois os usuários tendem a responder as primeiras opções que lêem e que correspondem ao que procuram. Então, o uso da ordem alfabética deve ser evitado e deve-se tentar utilizar um software que permita misturar as respostas dos diferentes participantes do questionário (opções aleatórias). Por fim, muitas respostas possíveis também causarão problemas para os usuários. Idealmente, não deve haver mais de 7 alternativas possíveis.</p>
+                <p class="col-wide"><strong>Perguntas em sequência</strong><br>Essas são perguntas que devem ser feitas sequencialmente com base na resposta que o usuário selecionou na pergunta anterior. Desta forma, você pode se aprofundar em um tópico específico. Elas precisam ser bem levantadas para evitar que o usuário se sinta perdido ou chegue a um ponto sem volta. Os saltos lógicos e as diferentes ramificações que podem existir em uma sucessão devem ser planejados e testados antes que o questionário seja divulgado ao público.</p>
+                <p class="col-wide"><strong>Perguntas de avaliação</strong><br>São perguntas nas quais pedimos ao usuário que avalie um aspecto ou a totalidade de um produto ou serviço. Geralmente é usada uma escala numérica ou avaliação qualitativa. Nessas questões é necessário evitar oferecer um valor numérico ou opção qualitativa intermediária, pois os usuários tenderão a dar esse valor. Portanto, uma escala de 0 a 5 é preferível a 1 a 5, por exemplo.</p>
+                <p class="col-wide"><strong>Método Likert</strong><br>Também é chamado de método de avaliação resumida. A escala Likert é aquela em que o usuário indica seu grau de concordância ou discordância em um conjunto de afirmações ou declarações. É uma das escalas mais utilizadas na elaboração de questionários em pesquisas em ciências sociais, pois permite ir além da dicotomia "Sim / Não" e com ela obter informações sobre opiniões, percepções e comportamentos. Escalas Likert podem ser utilizadas para reunir informações relacionadas à satisfação, usabilidade, opinião sobre uma novidade, percepções sobre o uso de um produto ou serviço, e assim por diante.</p>
+                <p class="col-wide">Para elaborar perguntas com elementos de resposta Likert, é necessário levantar afirmações positivas e negativas sobre o mesmo assunto, pois assim poderemos detectar se ocorrem inconsistências nas respostas. Deve-se ter em mente, neste momento, que é aconselhável transformar as afirmações em perguntas, pois as afirmações correm o risco de fazer com que os usuários respondam que concordam, para não provocar viés de consentimento. Esse fenômeno é comum em pesquisas e questionários quando há afirmações absolutas ou muito óbvias e faz com que os usuários tendam a responder que concordam com um aspecto.</p>
+                <p class="col-wide">Exemplo:</p>
+                <p class="col-wide">"Foi fácil usar o localizador do aeroporto?"</p>
+                <p class="col-wide">"Tem sido difícil selecionar aeroportos?"</p>
+                <p class="col-wide">Geralmente, são usados ​​5 elementos de resposta: “Discordo totalmente”, “Discordo”, “Não concordo nem discordo”, “Concordo” e “Concordo totalmente”. Desse modo, mede-se a atitude positiva, negativa e neutra que os usuários têm em relação a uma situação ou elemento explicitado em uma declaração.</p>
+                <p class="col-wide">Para obter informações tão específicas e precisas quanto possível ao usar tal escala, deve-se ter em mente que as afirmações e / ou perguntas devem ser o mais específicas possível. Por exemplo, se você quiser perguntar sobre o processo de reserva de um voo em um aplicativo, é mais aconselhável fazer perguntas específicas para cada fase do processo do que genéricas sobre o processo como um todo.</p>
+                <p class="col-wide">Da mesma forma, é necessário escolher com muito cuidado os adjetivos que farão parte da escala, caso opte por usar palavras textuais. As respostas devem incluir palavras descritivas que facilitem a compreensão de cada elemento da escala. Na verdade, mesmo que valores numéricos sejam usados ​​para a escala, é aconselhável incluir uma referência textual para a qual os usuários identifiquem claramente a faixa positiva, negativa e neutra de cada opção de resposta.</p>
+                
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <h3 class="col-wide">Aspectos a serem considerados na construção de questionários</h3>
+                <p class="col-wide">Apesar da existência de questionários padronizados, já vimos que nem sempre respondem a necessidades específicas de pesquisa; portanto, é importante saber qual questionário escolher em um determinado momento, bem como elaborar nossos próprios questionários.</p>
+                <p class="col-wide">Existem alguns aspectos a serem considerados ao elaborar um questionário, pois podem afetar o sucesso ou o fracasso na obtenção das respostas. Deve-se ter em mente que durante a resposta do usuário não temos visibilidade; por isso é necessário levantar questionários que sejam fáceis e não requeiram um esforço maior do que já requer. Além disso, deve-se ter em mente que os usuários, ao responder a questionários, geralmente desejam dar as respostas da forma mais precisa possível à sua experiência.</p>
+                <p class="col-wide">Aqui estão algumas recomendações:</p>
+                <p class="col-wide">- O questionário deve ser o mais breve e específico possível, adaptado à quantidade de informações de que precisamos e que o usuário possa ter.</p>
+                <p class="col-wide">- O questionário deve ser elaborado com a pessoa que o preenche em mente. Portanto, as perguntas precisam ser claras e concisas, mas também as respostas possíveis.</p>
+                <p class="col-wide">- É sempre necessário indicar se as questões são obrigatórias ou opcionais, de preferência com texto e não apenas com o asterisco padrão (*). Da mesma forma, é necessário especificar se as questões têm múltiplas respostas e qual o número máximo de opções que podem ser escolhidas nesses casos.</p>
+                <p class="col-wide">- As perguntas serão válidas desde que não levem a viés por meio de induções ou avaliações na mesma afirmação. Elas devem ser neutras. Por esta razão, as declarações não devem apresentar palavras que serão incluídas em respostas possíveis ou negações duplas. A melhor maneira de começar uma pergunta que pode levar a esse tipo de problema é "O que você acha de ...?".</p>
+                <p class="col-wide">- Tanto as declarações das perguntas quanto as diferentes opções de resposta devem ser curtas. Os usuários não devem ler duas vezes para não se lembrar da pergunta nem das opções.</p>
+                <p class="col-wide">- Se o questionário for puramente quantitativo, vale a pena incluir perguntas negativas para evitar o fenômeno do dedo rápido , ou seja, a resposta rápida do usuário.</p>
+                <p class="col-wide">- Para obter um número elevado de respostas é necessário limitar o número de questões, não é recomendado que um questionário demore mais de 7 minutos para ser respondido.</p>
+                <p class="col-wide">- Se o número de perguntas a serem feitas for muito grande, vale a pena considerar se o questionário pode ser dividido em dois. É melhor ter dois questionários rápidos de 10 perguntas para responder em dois momentos diferentes na experiência do usuário do que um único formulário de 20 perguntas.</p>
+                <p class="col-wide">- Recomenda-se fazer uma sequência de perguntas em que as perguntas mais simples para o usuário estão no início e a dificuldade aumenta conforme você avança.</p>
+                <p class="col-wide">- A ordem das perguntas deve ser lógica de acordo com os tópicos ou categorias que surgem. Recomenda-se agrupar por categorias e afinidades a fim de localizar o usuário e reduzir seu esforço cognitivo.</p>
+                <p class="col-wide">- Você precisa equilibrar o número de perguntas abertas e fechadas incluídas. Os usuários tendem a abandonar questionários que incluem apenas perguntas abertas.</p>
+                <p class="col-wide">- É preciso identificar quais são os melhores pontos para dar um salto de página.</p>
+                <p class="col-wide">- Recomenda-se mostrar o andamento do questionário em todos os momentos, seja oferecendo o número total de questões e o número de questões respondidas ou oferecendo a porcentagem de questões respondidas.</p>
+                <p class="col-wide">- As opções “Prefiro não responder” devem ser introduzidas para aquelas questões que possam afetar questões pessoais ou delicadas, especialmente se forem questões obrigatórias, pois a inexistência desta opção pode resultar em pessoas abandonando o processo de resposta.</p>
+                <p class="col-wide">- As opções “Outras” abertas devem ser inseridas para garantir que cobrimos todas as respostas possíveis.</p>
+                <p class="col-wide">- As opções "Não se aplica" ou "Eu não uso" precisam ser introduzidas nas perguntas que podem exigir, para evitar que os usuários dêem respostas falsas porque não têm a opção de que realmente precisam.</p>
+                <p class="col-wide">- Se houver necessidade de introduzir parágrafos explicativos ou introdutórios, eles devem ser destacados para que o usuário os identifique como informações relevantes. Se não, provavelmente eles não leram.</p>
+                <p class="col-wide">- Recomenda-se testar o questionário e revisá-lo antes de distribuí-lo entre os usuários.</p>
+                <p class="col-wide">- Se um software específico for usado, é recomendável usar uma ferramenta que permite registrar as respostas não concluídas. Dessa forma, além da obtenção de informações, é possível avaliar em que ponto do questionário ocorrem mais desistências.</p>
+                <p class="col-wide">- Da mesma forma que as questões precisam ser muito bem elaboradas, o aspecto gráfico do questionário deve ser mantido em mente. Um questionário graficamente atraente tem mais probabilidade de obter respostas.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <h3 class="col-wide">Problemas comuns</h3>
+                <p class="col-wide">Os problemas habituais que podem ser encontrados na análise dos resultados de um questionário são normalmente evitados se for feito um bom pré-teste para verificar a viabilidade e eficácia do questionário.</p>
+                <p class="col-wide">A seguir estão os tipos de problemas mais comuns:</p>
+                <p class="col-wide"><strong>Erros estruturais</strong><br>Os erros estruturais ocorrem quando o questionário é muito longo ou seu design visual torna-o difícil de ler e interagir. Precisamos ter em mente de quais dispositivos queremos que os usuários respondam às nossas perguntas e ter certeza de que todo o questionário pode ser respondido corretamente. Também é necessário calcular o tempo necessário para concluí-lo em sua totalidade. Esses aspectos relacionados ao formato e à duração são os que podem causar mais abandono durante o processo de resposta.</p>
+                <p class="col-wide"><strong>Erros de especificidade</strong><br>Os erros de especificidade estão relacionados aos objetivos da pesquisa e ocorrem quando um aspecto-chave das informações que desejamos obter não está incluído no questionário. Assim, ao ignorar esse tema ou dimensão estamos obtendo informações imprecisas sobre um ponto específico que pode nos levar a conclusões tendenciosas. Por exemplo, se nosso questionário se refere ao processo de reserva de um quarto de hotel e não perguntamos sobre a política de cancelamento, não estamos medindo em um aspecto que é fundamental para os usuários.</p>
+                <p class="col-wide"><strong>Erros de medição</strong><br>Os erros de medição geralmente são causados ​​por um desenho inadequado das perguntas do questionário, seja pelo uso da linguagem utilizada, seja por aspectos relacionados à ordem das perguntas e respostas. Muitos dos erros de medição podem ser evitados se você levar em consideração o conselho discutido na seção anterior sobre a construção de perguntas: neutralidade das perguntas, ordenação lógica, evitar preconceitos relacionados a aspectos sociais e pessoais, oferecer todas as opções de resposta possíveis, etc. Aspectos relacionados à usabilidade também precisam ser considerados.</p>
+                <h3 class="col-wide">Interpretação de resultados</h3>
+                <p class="col-wide">Deve-se ter em mente que os resultados obtidos em um questionário por si só não podem fornecer um significado suficientemente válido para tirar conclusões, portanto, os dados devem ser sempre comparados com outras medidas ou com informações extraídas por outras técnicas de pesquisa.</p>
+                <p class="col-wide">Por meio de questionários, geralmente obteremos informações quantitativas sobre satisfação, uso, opiniões e comportamento, e também podemos obter informações qualitativas se tivermos fornecido opções de perguntas abertas.</p>
+                <p class="col-wide">A interpretação dos dados nos permite encontrar padrões de comportamento e buscar as razões por trás deles. Normalmente precisamos de um olho treinado, conhecedor dos modelos mentais associados à pesquisa que estamos conduzindo.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <h3 class="col-wide">Typeform</h3>
+                <p class="col-wide">Possui uma versão gratuita que permite realizar diversas pesquisas e questionários. Para opções mais elaboradas (saltos lógicos, concatenação de perguntas, etc.), você precisa ter uma licença paga. Destaca seu design e adaptação para vários dispositivos. <a href="https://www.typeform.com/" target="_blank">Clique aqui</a></p>
+                <h3 class="col-wide">Surveymonkey</h3>
+                <p class="col-wide">Também tem uma versão gratuita e inclui a capacidade de usar questionários de modelo. Porém, na versão gratuita existem restrições que dificultam o trabalho posterior com os dados obtidos. <a href="https://www.surveymonkey.com/" target="_blank">Clique aqui</a></p></p>
+                <h3 class="col-wide">Google Forms</h3>
+                <p class="col-wide">A ferramenta Google é uma das mais conhecidas e utilizadas e tem como principal vantagem a integração com planilhas e outras ferramentas. No entanto, em termos de desenho e configuração é uma das ferramentas mais limitadas e apresenta algumas dificuldades para a elaboração de bons questionários. <a href="https://www.google.es/intl/ca/forms/about/" target="_blank">Clique aqui</a></p></p>
+                <h3 class="col-wide">Hotjar</h3>
+                <p class="col-wide">É uma solução de web analytics cuja principal vantagem é a integração de todas as informações em uma única plataforma: heat maps, estudos de conversão e rastreamento de navegação, pesquisas, formulários, etc. É uma das ferramentas mais utilizadas profissionalmente. Existe uma versão gratuita para estudantes. <a href="https://www.hotjar.com/" target="_blank">Clique aqui</a></p></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Calvo-Fernández Rodríguez, A.; Ortega Santamaría, S.; Valls Saez, A.</strong> «Métodos de avaliação com os usuários». <a href="http://openaccess.uoc.edu/webapps/o2/bitstream/10609/12921/9/Usabilitat_Mòdul3_%20Mètodes%20d¿avaluació%20amb%20usuaris.pdf" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Farrell, S.</strong> (2016). «28 dicas para criar grandes pesquisas qualitativas». Nielsen Norman Group. <a href="https://www.nngroup.com/articles/qualitative-surveys/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Gimeno Artigas, S.</strong> (2018). "Erros nas perguntas dos questionários." Torres Burriel Estudio. <a href="http://www.torresburriel.com/weblog/2018/12/18/errores-las-preguntas-los-cuestionarios/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Gimeno Artigas, S.</strong> (2018). "Perguntas abertas e fechadas em pesquisas online. <a href="http://www.torresburriel.com/weblog/2018/10/23/preguntas-abiertas-cerradas-encuestas-online/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Martín, R.</strong> (2018). «Erros na elaboração de questionários online». Legridd. <a href="https://www.legridd.com/ux-errores-en-cuestionarios-online-i-2/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Sauro, J.</strong>  «SUPR-Q: Uma medida abrangente da qualidade da experiência do usuário do site». Jornal de estudos de usabilidade. <a href="http://uxpajournal.org/supr-qa-comprehensive-measure-of-the-quality-of-the-website-user-experience/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide">"O que é uma escala Likert?" SurveyMonkey. <a href="https://www.surveymonkey.com/mp/likert-scale/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA storyboard ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia storyboard</h2>
+                <p class="col-wide">O storyboard é um método que se enquadra em um processo de design centrado no usuário na fase de pesquisa. Portanto, geralmente é feito no início do projeto, quando seus objetivos e o contexto em que o produto ou serviço será utilizado são conhecidos. Portanto, as informações sobre os usuários já foram obtidas com algum outro método, como a observação contextual.</p>
+                <p class="col-wide">O storyboard também funciona navegando em um aplicativo como um fluxograma, mas geralmente com um itinerário exclusivo, refletindo etapas importantes e emoções ou motivações dos usuários. A narrativa dos cenários também pode tornar mais fácil para nós definirmos os storyboards , adicionando breves comentários abaixo de cada imagem.</p>
+                <p class="col-wide">O método do storyboard ajudará você a:</p>
+                <p class="col-wide">- Concentrar-se nos altos e baixos emocionais de uma experiência específica.</p>
+                <p class="col-wide">- Avaliar ideias e refinar conceitualmente.</p>
+                <p class="col-wide">- Experimentar diferentes sequências de ação.</p>
+                <p class="col-wide">- Representar o fluxo de experiência antes de construir o protótipo.</p>
+                <p class="col-wide">- Colocar as pessoas em ação, levando em consideração diferentes requisitos e contextos.</p>
+                <p class="col-wide">O storyboard, portanto, é um método simples que nos ajudará a ver se a solução de design proposta ajuda as pessoas a atingirem seus objetivos.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Todo o material dos usuários ou stakeholders relacionado ao produto ou serviço deve ser bem elaborado para que todas as informações estejam disponíveis. Se as pessoas são conhecidas ou os modelos de pessoas foram criados anteriormente, eles podem ser usados ​​como referência ou modelo.</p>
+                <p class="col-wide">Recomenda-se ter uma folha em branco preparada com o modelo para desenhar as cenas no storyboard . Do estilo:</p>
+                <img class="col-wide" src="assets/img/guia_storyboard.jpg" alt="imagem html">
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">É recomendável que você siga estas etapas:</p>
+                <p class="col-wide">1ª - Selecione a proposta de design que você deseja trabalhar com a meta que deseja alcançar.</p>
+                <p class="col-wide">2ª - Defina o curso de ação para definir as etapas a serem seguidas para atingir a meta. É importante deixar claro o cronograma e a ordem em que as ações ocorrem.</p>
+                <p class="col-wide">3ª - Faça uma seleção dos touchpoints ou pontos de contato entre o usuário e nosso produto ou sistema, bem como as principais interações.</p>
+                <p class="col-wide">4ª - Assim que tivermos a seleção, estamos prontos para fazer uma primeira proposta de baixo nível das vinhetas, desenhando os elementos principais. É importante focar na experiência do usuário, nas emoções e na solução de problemas.</p>
+                <p class="col-wide">5ª - Compartilhe o storyboard com um colega para ver se ele entende. Você também pode aproveitar a oportunidade para adicionar mais detalhes às vinhetas.</p>
+                <p class="col-wide">6ª - Se desejar, pode fazer outra iteração com melhor qualidade dos desenhos.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Quando terminarmos, devemos ter um storyboard que reflita as etapas que nosso usuário deve seguir para completar uma meta. O storyborad é uma ferramenta simples que nos permite por pessoas em ação e provar, de forma rápida e barata, se nossa ideia funcionaria.</p>
+                <p class="col-wide">Lembre-se que esta ferramenta, como outras, é uma excelente ferramenta para o trabalho em equipe, pois permite definir linhas e ideias claras para trabalhar. Assim, a equipe pode compartilhar um fio condutor comum ao tomar decisões de design.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/storyboard.png" alt="imagem html">
+                <p class="col-wide"><a href="http://web.mit.edu/2.744/www/Project/Assignments/conceptSketches/design-o-mite/storyboard/mitt-story.html" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Caddick, R.; Cable, S.</strong> (2011). Comunicando a experiência do usuário: um guia prático para a criação de documentação UX útil . John Wiley & Sons.</p>
+                <p class="col-wide"><strong>Cooper, A.; Reimann, R.; Cronin, D.; Noessel, C.</strong> (2014). Sobre o rosto: os fundamentos do design de interação . John Wiley & Sons.</p>
+                <p class="col-wide"><strong>Greenberg, S.; Carpendale, S.; Marquardt, N.; Buxton, B.</strong> (2012). «O storyboard narrativo: contar uma história sobre o uso e o contexto ao longo do tempo». Interações . (vol. 19, no. 1, pp. 64-69).</p>
+                <p class="col-wide"><strong>Hanington, B.; Martin, B.</strong> (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+                <p class="col-wide"><strong>Kalbach, J.</strong> (2016). Mapeamento de experiências: um guia completo para a criação de valor por meio de jornadas, projetos e diagramas . O'Reilly Media, Inc.</p>
+                <p class="col-wide"><strong>Vertelney, L.; Curtis, G.</strong> (1990) Storyboards and Sketch Prototypes for Rapid Interface Visualization . Tutorial da OMS / ACM Press.</p>
+            </section>
+
+            <!--========== GUIA teste com usuários ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia teste com usuários</h2>
+                <p class="col-wide">O teste de usuário é uma técnica que faz parte de um processo de design centrado no usuário na fase de avaliação. Portanto, pode ser aplicado desde os estágios iniciais de prototipagem ( sketching ) e pode ser repetido, ao longo do processo de design, quantas vezes forem necessárias e como os recursos permitirem.</p>
+                <p class="col-wide">No caso de projetos de redesenho (em que é baseado em um projeto pré-existente) é altamente recomendável realizar testes com usuários preliminares, pois os resultados desta avaliação podem ajudar a definir as bases da nova proposta.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Definir o escopo</h3>
+                <p class="col-wide">O primeiro passo para propor um teste com os usuários é definir o foco, ou seja, por que a avaliação é realizada: qual a sua finalidade e quais questões específicas você quer verificar?</p>
+                <p class="col-wide">Também é necessário determinar como o teste será realizado:</p>
+                <p class="col-wide">- Face a face: com o avaliador e o participante no mesmo local.</p>
+                <p class="col-wide">- Remoto: utiliza ferramentas online que permitem testes remotos.</p>
+                <p class="col-wide">Definir o foco permite saber como planejar as sessões e o que procurar quando ocorrerem.</p>
+                <h3 class="col-wide">Definir o perfil dos participantes e fazer a captação</h3>
+                <p class="col-wide">Os usuários que fornecem as informações mais relevantes são aqueles que possuem características semelhantes às das pessoas do projeto.</p>
+                <p class="col-wide">Em linhas gerais, recomenda-se que cerca de 7 a 9 usuários participem de um teste, por ser considerado o número ideal com o qual se obtém uma maior quantidade de informações relevantes e não repetitivas. Porém, este número deve ser determinado de acordo com as condições de cada projeto e levando em consideração a quantidade de pessoas definida. Para que os resultados sejam significativos, você precisa ter mais de um participante por pessoa .</p>
+                <p class="col-wide">O processo de atrair usuários para um teste com usuários pode envolver um esforço significativo dentro do projeto, pois a dificuldade de encontrar participantes com os perfis necessários se soma à complexidade do gerenciamento de agendas. Para facilitar este processo, vários recursos podem ser usados:</p>
+                <p class="col-wide">- Se o cliente possui um banco de dados de seus usuários, pode-se partir dele para fazer a captura.</p>
+                <p class="col-wide">- Se o orçamento do projeto permitir, o processo de captura e planejamento das sessões pode ser subcontratado a agências especializadas (geralmente na área de marketing e pesquisa de mercado).</p>
+                <p class="col-wide">Em qualquer caso, recomenda-se não realizar mais de 3 testes com os usuários por dia, pois geralmente requerem muita atenção do avaliador, fazer mais pode levar à fadiga e à perda da capacidade de observação.</p>
+                <h3 class="col-wide">Definir o roteiro das sessões</h3>
+                <p class="col-wide">O avaliador deve preparar um script ou protocolo que determina quais etapas seguir na sessão. Para ser eficiente, a sessão deve durar menos de uma hora, pois o cansaço do usuário reduz sua capacidade de responder a tarefas e perguntas.</p>
+                <p class="col-wide">Embora o conteúdo das sessões possa ser mais flexível dependendo do comportamento do participante, é importante começar a partir de um script que defina o seguinte:</p>
+                <p class="col-wide"><strong>- Apresentação:</strong> como o avaliador se apresenta e como explica o objetivo da pesquisa. É importante garantir o anonimato das informações coletadas e do usuário envolvido.</p>
+                <p class="col-wide"><strong>- Questionário demográfico:</strong> antes de iniciar o teste, o usuário é questionado brevemente sobre questões demográficas que podem ser relevantes para o projeto (idade, sexo, ocupação, nível de experiência com a tecnologia, entre outros). Evite incluir perguntas que não sejam relevantes ou excessivamente pessoais.</p>
+                <p class="col-wide"><strong>- Formulário de consentimento:</strong> se a sessão for gravada ou dados identificáveis ​​do usuário forem usados, o usuário deve assinar um formulário de consentimento. Caso o usuário não queira se cadastrar, a observação deve ser realizada sem cadastro.</p>
+                <p class="col-wide"><strong>- Tarefas do teste:</strong> declaração das tarefas que serão colocadas ao usuário. Essas tarefas devem ser formuladas de forma a contextualizar a situação e não distorcer os resultados.
+                    Por exemplo, no teste de um site, propor uma tarefa como “Encontrar uma receita com frango” não é correto, pois não contextualiza a situação (o usuário terá que realizar uma tarefa sem um motivo específico). Por outro lado, a palavra "pesquisar" pode levar o usuário a usar a opção de pesquisa diretamente, distorcendo os resultados.
+                    Uma frase melhor seria “Esta noite você tem convidados para jantar e gostaria de encontrar uma receita para preparar o frango que comprou no mercado neste sábado. Como você faria isso? "</p>
+                <p class="col-wide"><strong>- Questionário final:</strong> no final da sessão, algumas perguntas abertas são feitas ao usuário sobre questões gerais e subjetivas: o que você achou do protótipo em geral? isso iria melhorar alguma coisa em particular? No final, é altamente recomendável perguntar se você deseja comentar ou adicionar algo mais; quando o usuário fala livremente por medo de revelar questões que passaram despercebidas.</p>
+                <p class="col-wide"><strong>- Remuneração:</strong> se isso for estabelecido, o usuário será reembolsado com um presente ou pagamento via dinheiro, cheque, deposito ou etc. O final da sessão é a hora de fazê-lo. Em qualquer caso, o usuário deve ser sempre agradecido pela sua participação.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">As sessões de teste com usuários seguem o roteiro estabelecido na fase de preparação, embora, à medida que diferentes usuários participam, cada sessão será diferente.</p>
+                <p class="col-wide">No entanto, as seguintes diretrizes principais precisam ser consideradas:</p>
+                <h3 class="col-wide">Quebre o gelo com o usuário</h3>
+                <p class="col-wide">Para agir normalmente, o usuário deve se sentir em um ambiente de confiança. O avaliador precisa deixar claro que não está sendo testado, mas que seu envolvimento é fundamental para melhorar o produto ou serviço em questão.</p>
+                <h3 class="col-wide">Aplique as tarefas uma a uma</h3>
+                <p class="col-wide">O avaliador deve abordar as tarefas uma a uma, deixando tempo para o usuário tentar resolvê-las. Ele não passa para a próxima tarefa até que aquela que está sendo executada seja concluída.</p>
+                <p class="col-wide">Uma tarefa pode ser concluída:</p>
+                <p class="col-wide">- quando o usuário atinge a meta definida (sucesso)</p>
+                <p class="col-wide">- quando se trata do que parece ser o objetivo, embora realmente não seja (falso sucesso)</p>
+                <p class="col-wide">- quando declara que não sabe como resolver depois de tentar (erro).</p>
+                <h3 class="col-wide">Não interfira nas ações do usuário</h3>
+                <p class="col-wide">O avaliador não deve dar orientações ou explicar ao usuário como resolver uma tarefa, mesmo que não funcione. O objetivo é observar como o usuário atua para melhorar o design, não ensiná-lo a resolver problemas de design deficiente.</p>
+                <h3 class="col-wide">Observe o usuário e peça a ele para verbalizar os pensamentos</h3>
+                <p class="col-wide">Verificar se o usuário pode concluir uma tarefa com sucesso é tão importante quanto saber como ele o faz e qual é o seu processo de pensamento.</p>
+                <p class="col-wide">Observar seus gestos e ouvir o que você está pensando permite captar questões emocionais e saber se o usuário está confortável ou confuso, zangado, cansado ou irritado.</p>
+                <h3 class="col-wide">Fazer perguntas</h3>
+                <p class="col-wide">O avaliador deve fazer quaisquer perguntas que não veja com clareza ou sobre as quais precise de mais informações. Você também deve evitar inferir ou fazer deduções pessoais sobre os motivos pelos quais o usuário está agindo de determinada maneira. É melhor pecar por excesso do que inadimplência.</p>
+                <p class="col-wide">As perguntas devem ser neutras e não conter sugestões ou críticas, para evitar enviesar as respostas.</p>
+                <h3 class="col-wide">Gravar as sessões</h3>
+                <p class="col-wide">Para garantir que possam ser revistos posteriormente, é altamente recomendável gravar as sessões com uma câmera de vídeo.</p>
+                <p class="col-wide">No caso de projetos digitais, existem ferramentas que permitem registrar problemas de detalhes, como o movimento do ponteiro (por exemplo, <a href="https://www.techsmith.com/tutorial-morae-current.html?gclid=CjwKEAjwqIfLBRCk6vH_rJq7yD0SJACG18frqs2qTOL9in2BrSLO79mCyFNnxISxU1tuw5ZAGq5KPhoCMJLw_wcB" target="_blank">Morae</a> ).</p>
+                <p class="col-wide">Além da gravação, o pesquisador deve certificar-se de fazer anotações sobre as questões mais relevantes. Boas anotações economizarão muito tempo na revisão das gravações.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">A partir da análise das sessões, dois tipos fundamentais de dados são obtidos:</p>
+                <h3 class="col-wide">Dados quantitativos</h3>
+                <p class="col-wide">Eles correspondem a:</p>
+                <p class="col-wide">- Dados demográficos dos participantes (coletados no questionário anterior).</p>
+                <p class="col-wide">- A análise dos resultados das tarefas:<br> -> Taxa de sucesso por tarefa (por exemplo, 50% de sucesso significa que apenas metade dos participantes completou bem a tarefa).<br> -> Tempo médio por tarefa (tempo médio que os participantes precisam para concluir a tarefa).<br> -> Razão de erros e falsos sucessos (percentagem de participantes que não conseguiram resolver a tarefa ou que obtiveram um falso sucesso).</p>
+                <h3 class="col-wide">Dados qualitativos</h3>
+                <p class="col-wide">- Anotações sobre as atividades que os usuários realizam para tentar resolver uma tarefa.</p>
+                <p class="col-wide">- Notas sobre a atitude emocional do usuário ao tentar resolver uma tarefa.</p>
+                <p class="col-wide">- Problemas observados.</p>
+                <p class="col-wide">- Respostas a perguntas abertas no final da sessão.</p>
+                <p class="col-wide">À medida que os dados coletados são revisados, os problemas precisam ser classificados de acordo com sua gravidade:</p>
+                <p class="col-wide"><strong>- Crítico:</strong> se não for resolvido, os usuários não conseguirão concluir a tarefa.</p>
+                <p class="col-wide"><strong>- Sério:</strong> muitos usuários ficarão frustrados se não for resolvido e podem abandonar o uso do produto.</p>
+                <p class="col-wide"><strong>- Menor:</strong> O problema pode causar desconforto, mas não impede que a tarefa seja realizada, e pode ser resolvido mais tarde.</p>
+                <p class="col-wide">O relatório de teste com os usuários deve incluir o seguinte conteúdo:</p>
+                <p class="col-wide"><strong>Introdução:</strong> informações básicas do teste: objetivos, número de participantes, local de realização das sessões, equipamentos utilizados na gravação e avaliadores participantes.</p>
+                <p class="col-wide"><strong>Metodologia:</strong> roteiro do teste e dados demográficos dos usuários com os quais foi realizada a avaliação. Suas identidades reais não serão incluídas a menos que tenham sido mencionadas como tal desde o início e os participantes tenham assinado o consentimento.</p>
+                <p class="col-wide"><strong>Resultados do teste:</strong> dados quantitativos e qualitativos coletados durante as sessões.</p>
+                <p class="col-wide"><strong>Conclusões e recomendações:</strong> a partir dos dados coletados, indique os problemas a serem resolvidos e as boas práticas a serem mantidas no projeto. Recomenda-se que os problemas ao serem resolvidos sejam acompanhados de recomendações sobre como fazê-lo. A redação desta seção deve ser executiva, ou seja, clara, concisa e estruturada de forma ágil (o formato de lista geralmente é o mais recomendado).</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <p class="col-wide">- <a href="https://wiki.fluidproject.org/" target="_blank">Fluid Engage</a><br>Caso real de <a href="https://wiki.fluidproject.org/pages/viewpage.action?pageId=12910850" target="_blank">protocolo</a> (script) para o teste de uma aplicação mobile, e seu <a href="https://wiki.fluidproject.org/pages/viewpage.action?pageId=13402809" target="_blank">relatório de resultados</a> correspondente.</p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Calvo-Fernández Rodríguez, A.</strong>; Ortega Santamaría, S.; Valls Saez, A. «Métodos de avaliação com os usuários». <a href="http://openaccess.uoc.edu/webapps/o2/bitstream/10609/12921/9/Usabilitat_Mòdul3_%20Mètodes%20d¿avaluació%20amb%20usuaris.pdf" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide">"Relatórios de resultados de testes de usabilidade". Usabilidade.gov. (2013, 9 de outubro). <a href="https://www.usability.gov/how-to-and-tools/methods/reporting-usability-test-results.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide">"Executando um teste de usabilidade." Usabilidade.gov. (15 de maio de 2014). <a href="https://www.usability.gov/how-to-and-tools/methods/running-usability-tests.html" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA tree testing ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia tree testing</h2>
+                <p class="col-wide">O tree testing é uma técnica que se enquadra em um processo de design centrado no usuário, a avaliação específica da arquitetura da informação. A partir da abordagem de várias tarefas aos usuários, você pode verificar:</p>
+                <p class="col-wide">- Se a estrutura proposta é intuitiva e permite que você encontre facilmente o conteúdo que procura.</p>
+                <p class="col-wide">- Se a rotulagem (terminologia utilizada) é inteligível e se relaciona de forma otimizada com o conteúdo.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <h3 class="col-wide">Definir o escopo</h3>
+                <p class="col-wide">Ao considerar o tree testing, o primeiro passo é definir o foco, ou seja, por que a avaliação é realizada: qual a sua finalidade e quais questões específicas você deseja verificar?</p>
+                <p class="col-wide">Também é necessário determinar como o teste será realizado:</p>
+                <p class="col-wide">- Face a face: com o avaliador e o participante no mesmo local.</p>
+                <p class="col-wide">- Remoto: utiliza ferramentas online que permitem testes remotos.</p>
+                <p class="col-wide">Definir o foco permite saber como planejar as sessões e o que procurar quando ocorrerem.</p>
+                <h3 class="col-wide">Definir o perfil dos participantes e fazer a captação</h3>
+                <p class="col-wide">Os usuários que fornecem as informações mais relevantes são aqueles que possuem características semelhantes às das pessoas do projeto.</p>
+                <p class="col-wide">Em termos gerais, recomenda-se que cerca de 7 ou 9 usuários participem de um tree testing, por ser considerado o número ideal com o qual se obtém uma maior quantidade de informações relevantes e não repetitivas. Porém, este número deve ser determinado de acordo com as condições de cada projeto e levando em consideração a quantidade de pessoas definida. Para que os resultados sejam significativos, você precisa ter mais de um participante por pessoa .</p>
+                <h3 class="col-wide">Definir o roteiro das sessões</h3>
+                <p class="col-wide">O avaliador deve preparar um script ou protocolo que determina quais etapas seguir na sessão. Para ser eficiente, a sessão deve durar menos de uma hora, pois o cansaço do usuário reduz sua capacidade de responder a tarefas e perguntas.</p>
+                <p class="col-wide">Embora o conteúdo das sessões possa ser mais flexível dependendo do comportamento do participante, é importante começar a partir de um script que defina o seguinte:</p>
+                <p class="col-wide"><strong>- Apresentação:</strong> como o avaliador se apresenta e como explica o objetivo da pesquisa. É importante garantir o anonimato das informações coletadas e do usuário envolvido.</p>
+                <p class="col-wide"><strong>- Questionário demográfico:</strong> antes de iniciar o teste, o usuário é questionado brevemente sobre questões demográficas que podem ser relevantes para o projeto (idade, sexo, ocupação, nível de experiência com a tecnologia, entre outros). Evite incluir perguntas que não sejam relevantes ou excessivamente pessoais.</p>
+                <p class="col-wide"><strong>- Formulário de consentimento:</strong> se a sessão for gravada ou dados identificáveis ​​do usuário forem usados, o usuário deve assinar um formulário de consentimento. Caso o usuário não queira se cadastrar, a observação deve ser realizada sem cadastro.</p>
+                <p class="col-wide"><strong>- Tarefas do teste:</strong> declaração das tarefas que serão colocadas ao usuário. Essas tarefas devem ser formuladas de forma a contextualizar a situação e não distorcer os resultados.
+                    Por exemplo, no teste de um site, propor uma tarefa como “Encontrar uma receita com frango” não é correto, pois não contextualiza a situação (o usuário terá que realizar uma tarefa sem um motivo específico). Por outro lado, a palavra "pesquisar" pode levar o usuário a usar a opção de pesquisa diretamente, distorcendo os resultados.
+                    Uma frase melhor seria “Esta noite você tem convidados para jantar e gostaria de encontrar uma receita para preparar o frango que comprou no mercado neste sábado. Como você faria isso? "</p>
+                <p class="col-wide"><strong>- Questionário final:</strong> no final da sessão, algumas perguntas abertas são feitas ao usuário sobre questões gerais e subjetivas: o que você achou do protótipo em geral? isso iria melhorar alguma coisa em particular? No final, é altamente recomendável perguntar se você deseja comentar ou adicionar algo mais; quando o usuário fala livremente por medo de revelar questões que passaram despercebidas.</p>
+                <p class="col-wide"><strong>- Remuneração:</strong> se isso for estabelecido, o usuário será reembolsado com um presente ou pagamento via dinheiro, cheque, deposito ou etc. O final da sessão é a hora de fazê-lo. Em qualquer caso, o usuário deve ser sempre agradecido pela sua participação.</p>
+
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">As sessões de tree testing seguem o script estabelecido na fase de preparação embora, à medida que diferentes usuários participam, cada sessão será diferente.</p>
+                <p class="col-wide">No entanto, as seguintes diretrizes principais precisam ser consideradas:</p>
+                <h3 class="col-wide">Quebre o gelo com o usuário</h3>
+                <p class="col-wide">Para agir normalmente, o usuário deve se sentir em um ambiente de confiança. O avaliador precisa deixar claro que não está sendo testado, mas que seu envolvimento é fundamental para melhorar o produto ou serviço em questão.</p>
+                <h3 class="col-wide">Aplique as tarefas uma a uma</h3>
+                <p class="col-wide">O avaliador deve abordar as tarefas uma a uma, deixando tempo para o usuário tentar resolvê-las. Ele não passa para a próxima tarefa até que aquela que está sendo executada seja concluída.</p>
+                <p class="col-wide">Uma tarefa pode ser concluída:</p>
+                <p class="col-wide">- quando o usuário atinge a meta definida (sucesso)</p>
+                <p class="col-wide">- quando se trata do que parece ser o objetivo, embora realmente não seja (falso sucesso)</p>
+                <p class="col-wide">- quando declara que não sabe como resolver depois de tentar (erro).</p>
+                <h3 class="col-wide">Não interfira nas ações do usuário</h3>
+                <p class="col-wide">O avaliador não deve dar orientações ou explicar ao usuário como resolver uma tarefa, mesmo que não funcione. O objetivo é observar como o usuário atua para melhorar o design, não ensiná-lo a resolver problemas de design deficiente.</p>
+                <h3 class="col-wide">Observe o usuário e peça a ele para verbalizar os pensamentos</h3>
+                <p class="col-wide">Verificar se o usuário pode concluir uma tarefa com sucesso é tão importante quanto saber como ele o faz e qual é o seu processo de pensamento.</p>
+                <p class="col-wide">Observar seus gestos e ouvir o que você está pensando permite captar questões emocionais e saber se o usuário está confortável ou confuso, zangado, cansado ou irritado.</p>
+                <h3 class="col-wide">Fazer perguntas</h3>
+                <p class="col-wide">O avaliador deve fazer quaisquer perguntas que não veja com clareza ou sobre as quais precise de mais informações. Você também deve evitar inferir ou fazer deduções pessoais sobre os motivos pelos quais o usuário está agindo de determinada maneira. É melhor pecar por excesso do que inadimplência.</p>
+                <p class="col-wide">As perguntas devem ser neutras e não conter sugestões ou críticas, para evitar enviesar as respostas.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">A partir da análise das sessões, dois tipos fundamentais de dados são obtidos:</p>
+                <h3 class="col-wide">Dados quantitativos</h3>
+                <p class="col-wide">Eles correspondem a:</p>
+                <p class="col-wide">- Dados demográficos dos participantes (coletados no questionário anterior).</p>
+                <p class="col-wide">- A análise dos resultados das tarefas:<br> -> Taxa de sucesso por tarefa (por exemplo, 50% de sucesso significa que apenas metade dos participantes completou bem a tarefa).<br> -> Tempo médio por tarefa (tempo médio que os participantes precisam para concluir a tarefa).<br> -> Razão de erros e falsos sucessos (percentagem de participantes que não conseguiram resolver a tarefa ou que obtiveram um falso sucesso).</p>
+                <h3 class="col-wide">Dados qualitativos</h3>
+                <p class="col-wide">- Anotações sobre as atividades que os usuários realizam para tentar resolver uma tarefa.</p>
+                <p class="col-wide">- Notas sobre a atitude emocional do usuário ao tentar resolver uma tarefa.</p>
+                <p class="col-wide">- Problemas observados.</p>
+                <p class="col-wide">- Respostas a perguntas abertas no final da sessão.</p>
+                <p class="col-wide">À medida que os dados coletados são revisados, os problemas precisam ser classificados de acordo com sua gravidade:</p>
+                <p class="col-wide"><strong>- Crítico:</strong> se não for resolvido, os usuários não conseguirão concluir a tarefa.</p>
+                <p class="col-wide"><strong>- Sério:</strong> muitos usuários ficarão frustrados se não for resolvido e podem abandonar o uso do produto.</p>
+                <p class="col-wide"><strong>- Menor:</strong> O problema pode causar desconforto, mas não impede que a tarefa seja realizada, e pode ser resolvido mais tarde.</p>
+                <p class="col-wide">O relatório de teste com os usuários deve incluir o seguinte conteúdo:</p>
+                <p class="col-wide"><strong>- Introdução:</strong> informações básicas sobre o teste da árvore : objetivos, número de participantes, local de realização das sessões, equipamentos utilizados na gravação e avaliadores participantes.</p>
+                <p class="col-wide"><strong>- Metodologia:</strong> script da árvore de teste e dados demográficos dos usuários com os quais foi realizada a avaliação. Suas identidades reais não serão incluídas a menos que tenham sido mencionadas como tal desde o início e os participantes tenham assinado o consentimento.</p>
+                <p class="col-wide"><strong>- Resultados do teste:</strong> dados quantitativos e qualitativos coletados durante as sessões.</p>
+                <p class="col-wide"><strong>- Conclusões e recomendações:</strong> a partir dos dados coletados, indique os problemas a serem resolvidos e as boas práticas a serem introduzidas na arquitetura da informação. Recomenda-se que os problemas a serem resolvidos sejam acompanhados de recomendações sobre como fazê-lo. A redação desta seção deve ser executiva, ou seja, clara, concisa e estruturada de forma ágil (o formato de lista geralmente é o mais recomendado).</p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Como usar o Tree Testing para testar a arquitetura de informações do seu site ou aplicativo. Loop11.</strong> <a href="https://www.loop11.com/how-to-use-tree-testing-to-test-the-information-architecture-of-your-website-or-app/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+                <p class="col-wide"><strong>Obrien, D.</strong> (5 de dezembro de 2009) Tree Testing. Caixas e setas. <a href="http://boxesandarrows.com/tree-testing/" target="_blank">Clique aqui</a> [Data da consulta: 25 de janeiro de 2021].</p>
+            </section>
+
+            <!--========== GUIA user journey ==========-->
+            <section class="content guias">
+                <h2 class="col-wide">Guia user journey</h2>
+                <p class="col-wide">O user journey é um método de design centrado no usuário que faz parte das fases de definição ou avaliação e mostra passo a passo a interação do usuário com um sistema, descrevendo suas emoções e reações em cada um dos pontos de contato ( touchpoints ) com o produto.</p>
+                <p class="col-wide">Os user journeys permitem um entendimento mais profundo da interação, identifica pontos fracos e oportunidades para melhorar a experiência do usuário.</p>
+                <p class="col-wide">Para elaborá-los, partimos das informações definidas na modelagem de personas e cenários. </p>
+                <p class="col-wide">O user journey reflete o itinerário concreto de uma pessoa específica para um determinado cenário; no entanto, ao contrário dos cenários, esses journey mostram interação visualmente e enfatizam as emoções dos usuários.</p>
+                <p class="col-wide">O método de user journey permite:</p>
+                <p class="col-wide">- Ter empatia com o usuário, conhecer suas expectativas e entender como ele se sente a cada momento de sua interação com o produto.</p>
+                <p class="col-wide">- Identificar os aspectos da interação que são ineficientes ou improváveis ​​e ideias para fornecer uma boa experiência ao usuário.</p>
+                <p class="col-wide">- Que todos os membros da equipe tenham a mesma visão sobre o contexto e uso do serviço.</p>
+                <p class="col-wide">Preparar o user journey pode determinar o sucesso de nosso produto ou serviço.</p>
+
+                <h2 class="col-wide">Preparação</h2>
+                <p class="col-wide">Para fazer o user journey , é muito conveniente ter as informações coletadas em arquivos de personas e também em cenários.</p>
+                <p class="col-wide">É necessário ter um Canvas pronto (em papel ou digital) para trabalhar nele e ter espaço suficiente para agregar as informações.</p>
+                
+                <h2 class="col-wide">Desenvolvimento / execução</h2>
+                <p class="col-wide">Cada user journey reflete o itinerário de uma pessoa específica para um determinado cenário. Portanto, eles devem comunicar claramente qual segmento do público eles representam ou em quais pessoas eles se baseiam, construir sobre os arquétipos definidos e representar fielmente seu comportamento, emoções e etc.</p>
+                <p class="col-wide">Os user journeys são feitos seguindo estas etapas:</p>
+                <p class="col-wide">1ª <strong>Definir a meta:</strong> a partir dos cenários desenvolvidos, em primeiro lugar o que é necessário para definir o objetivo do usuário: o que você deseja alcançar com o produto?</p>
+                <p class="col-wide">2ª <strong>Determinar as etapas:</strong> uma vez que a meta é definida, as etapas que devem ser executadas para alcançá-la são estabelecidas. Uma estrutura comum de user journey inclui a sequência de descoberta, consideração, compra e lealdade. No entanto, não existe um esqueleto padrão para todas os journeys, mas as etapas variam dependendo do tipo de produto e das informações definidas na modelagem.</p>
+                <p class="col-wide">3ª <strong>Definir o conteúdo:</strong> em seguida, é necessário determinar quais informações devem ser incluídas no diagrama. Novamente, essa decisão depende do tipo de produto e da modelagem, embora geralmente englobe estes aspectos:<br>- Touchpoints: quando o usuário interage com o produto?<br>- Ações: quais ações executa em cada etapa ?; o que faz para poder continuar e avançar para o próximo ponto?<br>- Pain points: quais obstáculos encontra?<br>- Emoções: como se sente durante sua interação com o produto?<br>- Oportunidades: o que podemos fazer para melhorar a experiência nesta etapa?</p>
+                <p class="col-wide">4ª <strong>Criar o diagrama:</strong> a estrutura habitual baseia-se em colocar nas colunas os passos identificados depois de ter realizado a tarefa descrita no ponto 2 desta lista, e nas linhas, os diferentes aspectos em que decidimos focar, depois de fazer a tarefa definida no ponto 3.</p>
+                <img class="col-wide" src="assets/img/tabela-user-journey.png" alt="imagem html">
+                <p class="col-wide">5ª <strong>Formato:</strong> os user journeys são uma ferramenta que possui um alto componente visual, portanto, uma vez definido o conteúdo do gráfico é necessário trabalhar na camada de design que o envolve e ajuda a transmitir as informações nele contidas.</p>
+
+                <h2 class="col-wide">Análise / resultados</h2>
+                <p class="col-wide">Uma vez criada o user journey, é possível analisar sua experiência e avaliar seu comportamento para entender em detalhes a relação de suas emoções com suas expectativas e motivações em relação ao produto. Dessa forma, é possível extrair insights de cada uma das etapas e trabalhar nas oportunidades de melhoria do produto.</p>
+                <p class="col-wide">Além disso, é importante compartilhá-lo com outros membros da equipe para que todos os envolvidos no design do produto tenham a mesma visão.</p>
+                <p class="col-wide">Finalmente, o user journey não é um documento estático. Diante de qualquer mudança, evolução do mercado, introdução de novos serviços e etc, é imprescindível iterar e incorporar as mudanças que sejam necessárias.</p>
+
+                <h2 class="col-wide">Exemplos</h2>
+                <img class="col-wide" src="assets/img/userJourney.jpg" alt="imagem html">
+                <p class="col-wide">Fonte: TamdenSeven <a href="https://www.tandemseven.com" target="_blank">Clique aqui</a></p>
+
+                <h2 class="col-wide">Referências</h2>
+                <p class="col-wide"><strong>Caddick, R.; Cable, S.</strong> (2011). Comunicando a experiência do usuário: um guia prático para a criação de documentação UX útil . John Wiley & Sons.</p>
+                <p class="col-wide"><strong>Greenberg, S.; Carpendale, S.; Marquardt, N., et al.</strong> (2012). «O storyboard narrativo: contar uma história sobre o uso e o contexto ao longo do tempo». Interactions (vol. 1, no. 19, pp. 64-69).</p>
+                <p class="col-wide"><strong>Hanington, B.; Martin, B.</strong> (2012). Métodos universais de design: 100 maneiras de pesquisar problemas complexos, desenvolver ideias inovadoras e projetar soluções eficazes . Rockport Publishers.</p>
+                <p class="col-wide"><strong>Kalbach, J.</strong> (2016). Mapeamento de experiências: um guia completo para a criação de valor por meio de jornadas, projetos e diagramas . O'Reilly Media, Inc.</p>
+                <p class="col-wide"><strong>Vertelney, L.; Curtis, G.</strong> (1990). «Storyboards e protótipos de esboço para visualização rápida da interface». ACM Press.</p>
+            </section>
+        </main>
+
+        <div id="modal-promocao" class="modal-container">
+            <div class="modal">
+                <button class="fechar">x</button>
+                <h3 class="subtitulo">Bem vindo ao Design Toolkit BR!</h3>
+                <p>Estamos frequentemente atualizando e adicionando novos conteúdos. Atualmente está disponível apenas a lista completa dos guias de execução. Esperamos que possa ajudar em seus projetos!</p>
+            </div>
+        </div>
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
